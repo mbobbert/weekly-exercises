@@ -1,0 +1,41 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#square1 {
+    width: 250px;
+    height: 250px;
+    background-color: darkslategray;
+    margin: 20px;
+
+}
+
+/*#square2 {
+    width:250px;
+    height: 250px;
+    background-color: green;
+    float: right;
+    position: relative;
+    right: 0px;
+}*/
+
+.progress {
+    width: 1000px;
+    padding: 20px;
+    background-color: pink;
+}
+.bar {
+    width:0%;
+    height: 2rem;
+    background-color: darkred;
+    margin-bottom: 15px;
+}
+
+
+
+#my-btn {
+    font-size: 1rem;
+    background-color: orange;
+}
+

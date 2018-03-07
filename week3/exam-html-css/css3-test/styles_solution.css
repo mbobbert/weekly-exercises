@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+div {
+    border: 1px solid #000000;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .top {
+    float: left;
+    width: 60vw;
+    /*min-width: 540px;*/
+  }
+
+  .container {
+    display: flex;
+    float: left;
+    /*height: 50vw;*/
+    width: 60vw;
+    /*min-width: 540px;*/
+  }
+
+  .main {
+     display: flex;
+     float: left;
+     flex-direction: column;
+     width: 30vw;
+     /*height: 40vw;*/
+  }
+
+  .left {
+    float: left;
+    width: 10vw;
+    /*height: 40vw;*/
+    order: -1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .right {
+    float: left;
+    width: 10vw;
+    /*height: 40vw;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .top .main .left .right {
+      width:100vw;
+    }
+  }

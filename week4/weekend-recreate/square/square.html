@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Square moving</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+<div id="square"></div>
+
+<script>
+
+var square1 = new Square (
+    'Hubby', 2, 2, 'green', 5, 6
+)
+
+console.log(square1.info());
+
+square1.createHTML();
+square1.updateHTML();
+
+$(document).on('keyup', function(event) {
+    if (event.key === "ArrowRight") {
+        square1.move("right")
+    } else if (event.key === "ArrowLeft") {
+        square1.move("left")
+    } else if (event.key === "ArrowUp") {
+        square1.move("up")
+    } else if (event.key === "ArrowDown") {
+        square1.move("down")
+    }
+})
+
+
+
+
+
+</script>
+
+</body>
+</html>

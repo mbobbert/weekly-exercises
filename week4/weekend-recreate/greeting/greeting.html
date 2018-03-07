@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello</title>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+
+    <style>
+         h1 {
+             font-size: 50px;
+         }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Hello</h1>
+    <p> What's your name?
+        <input type="text" id='name'>
+    </p>
+    <button id='btn'>Click me for your greeting</button>
+
+    <script>
+    $(document).on('click', function() {
+        var name = $('#name').val();
+        $("#greeting").html("hi" + " " + name);
+    });
+
+    </script>
+
+
+</body>
+</html>

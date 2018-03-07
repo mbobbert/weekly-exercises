@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page-heading">
+		My Great Company
+	</div>
+	<div class="login-wrapper">
+		<div class="login">
+			<div class="login-heading">
+				Customer login
+			</div>
+			<div class="input-row">
+				<div class="icon user"></div>
+				<input class="field" id="user" type="text" />
+
+			</div>
+			<div class="msg1"></div>
+			<div class="input-row">
+				<div class="icon lock"></div>
+				<input class="field" id="password" type="password" />
+
+			</div>
+			<div class="msg2"></div>
+			<button class="login-button">Login</button>
+			<div class="OK hidden"> Congrats, you have correctly entered your login details! :-D :-D :-D<iframe src="https://giphy.com/embed/3o7qE2VAxuXWeyvJIY" width="200" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/3o7qE2VAxuXWeyvJIY">via GIPHY</a></p></div>
+		</div>
+	</div>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+
+		$(".login-button").click(login);
+
+		function login(event) {
+			var user = $('#user').val();
+			var password = $("#password").val();
+
+			if (user.length < 6) {
+				$("#user").addClass('error');				// you only want the element, not the innerHTML
+				console.log("you have to enter at least 6 characters");
+				$(".msg1").html("you have to enter at least 6 characters");
+			}
+
+			if (password !== "opensesame") {
+				$("#password").addClass('error');
+				console.log("your password is incorrect");
+				$(".msg2").html("your password is incorrect");
+			}
+
+			$(".login-button").click(function() {
+				$(".OK").removeClass('hidden');
+			});
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice button</title>
+</head>
+<body>
+
+<style>
+    button {
+        width: 25rem;
+        height: 3rem;
+    }
+
+    .side1 {
+        background-image:url("img/side1.png");
+    }
+
+    .side2 {
+        background-image:url("img/side2.png");
+    }
+
+    .side3 {
+        background-image:url("img/side3.png");
+    }
+
+    .side4 {
+        background-image:url("img/side4.png");
+    }
+
+    .side5 {
+        background-image:url("img/side5.png");
+    }
+
+    .side6 {
+        background-image:url("img/side6.png");
+    }
+
+#random_number {
+    width: 338px;
+    height: 338px;
+    border: 1px solid black;
+}
+
+</style>
+
+<script>
+    function random_dice(lower, upper) {
+        return Math.round(
+            lower + Math.random() * (upper - lower)
+            );
+    }
+
+    function roll() {
+        var element = document.getElementById('random_number');
+        element.className = 'side' + random_dice(1,6);
+    }
+
+</script>
+
+    <button onClick="roll()">Click this button for a random number!</button>
+    <div id="random_number"></div>
+</body>
+</html>
+
+<!-- You have a button and a div with nothing inside it.
+You want the button to do something. So you create a function for it.
+
+The function roll() will then
+    - create a variable, and grab the tag in which something should be done (inside the div) When it is CLICKED (onClick)
+    - when the button has grabbed it, it wants it to execute a function (random_dice) inside the HTML (that's why we have the .innerHTML)
+//-->

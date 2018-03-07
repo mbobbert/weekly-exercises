@@ -1,0 +1,62 @@
+// create a printReverse function
+function printReverse(arr) {
+	for (var i = arr.length-1; i >= 0 ; i--) {
+		console.log(arr[i])
+	}
+
+}
+printReverse([1,2,3,4]);
+
+
+//create isUniform - return true if all the items in the array are the same
+function isUniform(arr) {
+var firstItem = arr[0];
+for(var i = 1; i < arr.length; i ++) {
+	if(arr[i] !== firstItem) {
+		return false;
+	}
+}
+	return true;
+}
+
+isUniform([1,2,3,4]);
+
+
+//find sumArray - accepts an array and return the sum of all numbers in the array
+//loop, variable result to store the answer and constantly add into it into the loop
+function sumArray(arr) {
+var result = 0
+for(var i in arr) {
+	result += arr[i];
+	console.log(result)
+	}
+}
+
+function foreachArray(arr) {
+	var result = 0
+	arr.forEach(function(element) {
+	result +=element;
+	});
+	return result;
+	}
+
+
+
+// find Max in an array
+//accepts an array in numbers, and return max number in the array
+function findMax(arr) {
+	var max = arr.reduce(function(a,b) {
+		return Math.max(a,b);
+	});
+	return max;
+}
+
+function max(arr){
+	var max = arr[0];
+	for(var 1= i; i < arr.length; i ++) {
+		if(arr[i] > max) {
+			max = arr[i];
+		}
+	}
+	return max;
+}

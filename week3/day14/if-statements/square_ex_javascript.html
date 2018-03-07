@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="square"></div>
+
+
+    <script>
+        var square = document.getElementById('square');
+
+        square.style.width = "100px";
+        square.style.height = "100px";
+        square.style.background = "#f00";
+        square.style.position = "absolute";
+        square.style.left = ((window.innerWidth - 100) / 2) + "px";
+        square.style.top = ((window.innerHeight - 100) / 2) + "px";
+
+
+        console.log(square.style.left);
+
+// 1. listen for keyup event in browser
+        document.addEventListener( 'keyup', keyPressed);
+        //you set an event on the whole document, and not on a specific button, so you dont need. getElementById
+// 2. determine which key was pressed
+//3. move the square to left, right, up or down
+// - get actual position
+// - calculate new positin
+// - save position and move
+
+    function keyPressed(event) {
+        console.log(event);
+        if(event.key == "ArrowRight") {
+            console.log('right');
+
+            var left = square.style.left; // read the current value in the syntax ( get actual position), in pixels
+            left = parseInt(left) // force to turn string into number ( because now it is eg '500px' and this is not a number but a string)
+            left = left + 10; // increase the number ( calc new position)
+            square.style.left = left + 'px'; //turn the number back to a string to make javascript understand we are talking about pixels --> IMPORTANT: return to ORIGINAL label, not to variable (get the label and then tell the browser what to return ( the variable))
+
+
+        } else if (event.key =="ArrowLeft") {
+            console.log('left');
+
+            var left = square.style.left;
+            left = parseInt(left);
+            left = left - 10;
+            square.style.left = left + 'px';
+
+
+        } else if (event.key =="ArrowUp") {
+            console.log('up');
+
+            var top = square.style.top;
+            top = parseInt(top);
+            top = top - 10;
+            square.style.top = top + 'px';
+
+
+        } else if (event.key =="ArrowDown") {
+            console.log('down');
+
+            var top = square.style.top;
+            top = parseInt(top);
+            top = top + 10;
+            square.style.top = top + 'px';
+        }
+
+    }
+
+
+
+
+
+
+
+// ON ENTER, CHANGE COLOR OF SQUARE
+// 1. listen for keyup event in browser
+document.addEventListener( 'keyup', enterPressed);
+        //you set an event on the whole document, and not on a specific button, so you dont need. getElementById
+// 2. determine which key was pressed --> should be enter key
+
+function enterPressed(event) {
+        if(event.key == "Enter") {
+            console.log('Enter');
+            var color = square.style.background; //
+            color = 'blue'; // set color to blue
+            square.style.background = 'blue'; // once color is set to blue, assign it back to the square
+            }
+        }//turn the number back to a string to make javascript understand we are talking about pixels
+
+// ON skey, CHANGE COLOR OF SQUARE random
+// 1. listen for keyup event in browser
+document.addEventListener( 'keyup', sPressed);
+        //you set an event on the whole document, and not on a specific button, so you dont need. getElementById
+// 2. determine which key was pressed --> should be enter key
+
+function sPressed(event) {
+        if(event.key == "s") {
+            console.log('s');
+            var hue = 'rgb(' +                          //telling the browser what to do
+            (Math.floor(Math.random() * 256)) + "," + // ' generate random color javascript'
+            (Math.floor(Math.random() * 256)) + "," +
+            (Math.floor(Math.random() * 256)) + ")";
+
+            console.log(hue);
+
+            square.style.background = hue; // putting the value back
+            }
+        }//turn the number back to a string to make javascript understand we are talking about pixels
+
+
+// let square move until new button pressed
+//
+//// change color randomly when X is pressed
+//document.addEventListener( 'keyup', xPressed);
+//function xPressed(event) {
+        //if(event.key == "x") {
+            //console.log('x');
+//
+            //var hue = square.style.background;
+            //hue =
+                    //'rgb(' +                          //telling the browser what to do
+                    //(Math.floor(Math.random() * 256)) + "," + // ' generate random color javascript'
+                    //(Math.floor(Math.random() * 256)) + "," +
+                    //(Math.floor(Math.random() * 256))
+                    //+ ")";
+//
+            //square.style.background = hue; // putting the value back
+            //}
+        //}//turn the number back to a string to make javascript understand we are talking about pixels
+
+
+
+
+</script>
+
+</body>
+</html>

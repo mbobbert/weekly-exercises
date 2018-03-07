@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Square OOP recreated</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="squareOOP.js"></script>
+
+
+
+</head>
+<body>
+    <div id="square"></div>
+
+        <script>
+            var square1 = new Square (
+            'Mandy', 2, 2, 'red', 4, 4
+        )
+
+        console.log(square1.info());
+            //$('#pacman').css({'left': '+=60'});
+
+        square1.createHTML();
+        square1.updateHTML();
+
+        //$(document).keydown(function(e) {
+			//if(e.keyCode === 39) {
+				//square1.step('right');
+			//} else if(e.keyCode === 37) {
+				//square1.step('left');
+			//} else if(e.keyCode === 38) {
+				//square1.step('up');
+			//} else if(e.keyCode === 40) {
+				//square1.step('down');
+			//}
+        //});
+
+        $(document).keyup(function(event) {
+            if (event.key === "ArrowRight") {
+                square1.move('right')
+            } else if (event.key === "ArrowLeft") {
+                square1.move('left')
+            } else if (event.key ==="ArrowUp") {
+                square1.move('up')
+            } else if (event.key === "ArrowDown") {
+                square1.move('down')
+            }
+        })
+
+        </script>
+
+</body>
+</html>

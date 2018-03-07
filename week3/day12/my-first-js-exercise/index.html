@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice button</title>
+</head>
+<body>
+
+<style>
+    button {
+        width: 25rem;
+        height: 3rem;
+    }
+</style>
+
+<script>
+    function random_dice(lower, upper) {
+        return Math.round(
+            lower + Math.random() * (upper - lower)
+            );
+    }
+
+    function roll() {
+        var element = document.getElementById('random_number');
+        element.innerHTML = random_dice(1,6);
+    }
+
+</script>
+
+    <button onClick="roll()">Click this button for a random number!</button>
+    <div id="random_number"></div>
+</body>
+</html>
+
+// You have a button and a div with nothing inside it.
+You want the button to do something. So you create a function for it.
+
+The function roll() will then
+    - create a variable, and grab the tag in which something should be done (inside the div) When it is CLICKED (onClick)
+    - when the button has grabbed it, it wants it to execute a function (random_dice) inside the HTML (that's why we have the .innerHTML)
+//

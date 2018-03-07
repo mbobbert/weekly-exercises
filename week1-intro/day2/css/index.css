@@ -1,0 +1,47 @@
+body {
+    background-color: #232323;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+h1, p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h3 {
+    color: #000099;
+    background-color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+a {
+    color: white;
+}
+.center {
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid white;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

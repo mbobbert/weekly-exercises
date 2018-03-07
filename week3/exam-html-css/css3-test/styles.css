@@ -1,0 +1,34 @@
+div {
+    border: 1px solid #000000;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .top {
+      display: flex;
+      width: 40rem;
+  }
+
+  .container {
+      display: flex;
+      height: 20rem;
+      width: 40rem;
+  }
+
+  .main {
+     display: flex;
+     flex-direction: column;
+     width: 18rem;
+     height: 16rem;
+  }
+
+  .left {
+      width: 6rem;
+      height: 16rem;
+      order: -1;
+  }
+
+  .right {
+    width: 6rem;
+    height: 16rem;
+}

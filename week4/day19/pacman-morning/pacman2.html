@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        .right-open {
+            background-image:url('img/popen-right.png');
+        }
+        .right-close {
+            background-image:url('img/pclosed-right.png');
+        }
+
+        .left-open {
+            background-image:url('img/popen-left.png');
+        }
+
+        .left-close {
+            background-image:url('img/pclosed-left.png');
+        }
+
+        .up-open {
+            background-image:url('img/popen-up.png');
+        }
+        .up-close {
+            background-image:url('img/pclosed-up.png');
+        }
+
+        .down-open {
+            background-image:url('img/popen-down.png');
+        }
+
+        .down-close {
+            background-image:url('img/pclosed-down.png');
+        }
+
+        .right {}
+
+        .left {}
+
+        .up{}
+        .down{}
+
+        #pacman {
+            width: 65px;
+            height: 65px;
+            border: 1px solid black;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pacman" class="right-open"></div>
+    <button id='btn'>Click me</button>
+
+
+<script>
+    $('#btn').on('click', function(event) {
+
+        $('#pacman').toggleClass('right-open right-close');
+
+        console.log(event);
+    })
+
+   // var pacman = $("#pacman");
+
+//pacman.css("position" , "absolute");
+//pacman.css("left" , ((window.innerWidth - 100) / 2) + "px");
+//pacman.css("top" , ((window.innerHeight - 100) / 2) + "px");
+
+
+    $(document).on('keyup', function(event) {
+        console.log(event);
+
+
+       if (event.key == "ArrowRight") {
+        $('#pacman').css({'left': '+=60'});
+
+        if($('#pacman').hasClass('right')) {
+            $('#pacman').toggleClass('right-open right-close');
+            console.log("arrow right is pressed");
+        } else {$('#pacman').removeClass();
+                $('#pacman').addClass('right');
+                $('#pacman').addClass('right-open');
+            }
+       }
+    });
+
+    $(document).on('keyup', function(event) {
+        console.log(event);
+
+
+       if (event.key == "ArrowLeft") {
+        $('#pacman').css({'left': '-=60'});
+
+        if($('#pacman').hasClass('left')) {
+            $('#pacman').toggleClass('left-open left-close');
+            console.log("arrow left is pressed");
+        } else {$('#pacman').removeClass();
+                $('#pacman').addClass('left');
+                $('#pacman').addClass('left-open');
+            }
+       }
+    });
+
+    $(document).on('keyup', function(event) {
+        console.log(event);
+
+
+       if (event.key == "ArrowUp") {
+        $('#pacman').css({'top': '-=60'});
+
+        if($('#pacman').hasClass('up')) {
+            $('#pacman').toggleClass('up-open up-close');
+            console.log("arrow up is pressed");
+        } else {$('#pacman').removeClass();
+                $('#pacman').addClass('up');
+                $('#pacman').addClass('up-open');
+            }
+       }
+    });
+
+    $(document).on('keyup', function(event) {
+        console.log(event);
+
+
+       if (event.key == "ArrowDown") {
+        $('#pacman').css({'top': '+=60'});
+
+        if($('#pacman').hasClass('left')) {
+            $('#pacman').toggleClass('down-open down-close');
+            console.log("arrow down is pressed");
+        } else {$('#pacman').removeClass();
+                $('#pacman').addClass('down');
+                $('#pacman').addClass('down-open');
+            }
+       }
+    });
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

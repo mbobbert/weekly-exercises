@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hero</title>
+    <link rel="stylesheet" href="css/hero.css">
+</head>
+<body>
+
+<div id="map">
+
+    <div id="hero">
+
+    </div>
+
+</div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="js/hero.js"></script>
+<script>
+    $(document).ready(function(){
+console.log("doc is ready");
+
+});
+var hero1 = new Hero(
+    'john', 3, 2);
+
+console.log(hero1.info());
+hero1.createHTML();
+
+</script>
+</body>
+</html>

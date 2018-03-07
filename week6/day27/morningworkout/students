@@ -1,0 +1,45 @@
+Students
+--------------
+Id: primary key
+Name: short string
+DoB: date
+Address_id: integer
+exam_grade: integer
+enrollment_year: date
+Nationality: short string
+Current_rank: integer
+Github_account: short string
+sex_id: short string
+scholarship: boolean
+did_pass: boolean
+grade_avg: decimal
+faculty_id: integer
+
+Addresses
+--------
+id:
+name:
+street:
+street_nr
+country
+zip
+
+genders
+----
+id:
+name: (male, female, mixed, octopus)
+
+exams
+-----
+
+id:
+name:(week 3 test, week 5 test, week 7 test, week 9 test) --> 3 rows
+
+
+exam_tries
+---------
+student_id: PK
+exam_id: PK
+grade: integer 
+
+

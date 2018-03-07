@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salary Recreated</title>
+</head>
+<body>
+    <!--1. Do the HTML // DONE
+            1. Define 4 fields, pay_hour, hours_day, days_month, tax
+            2. create a button
+            3. create a div
+        2. Set up javascript functions // DONE
+            1. set event listener on the button
+            2. create a function of what the button should do
+            3. create a function of the salary calc
+            4. return the value
+            5. insert a message
+    -->
+    <h1>Salary Calc</h1>
+
+    <p>How much do you get paid per hour?</p>
+    <input type="number" id="pay_hour">
+
+    <p>How many hours a day do you work?</p>
+    <input type="number" id="hours_day">
+
+    <p>How many days per month do you work</p>
+    <input type="number" id="days_month">
+
+    <p>How much tax do you pay?</p>
+    <input type="number" id="tax">
+
+    <button id="btn">Click me to calculate salary</button>
+    <div id="salary_output"></div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        $('#btn').click(give_output);
+
+        function give_output() {
+            $('#salary_output').html("You earn" + salary_calc + "euro");
+        }
+
+        function salary_calc() {
+            var payPerHour = $('#pay_hour');
+            var payPerHour_number = parseInt(payPerHour.val());
+
+            var hoursPerDay = $('#hours_day');
+            var hoursPerDay_number = parseInt(hoursPerDay.val());
+
+            var daysPerMonth = $('#days_month');
+            var daysPerMonth_number = parseInt(daysPerMonth.val());
+
+            var tax = $('#tax');
+            var tax_number = parseFloat(tax.val()); // pay attention!: use parseFloat to transform strings into decimal numbers
+
+            var salary = (payPerHour_number * hoursPerDay_number * daysPerMonth_number);
+            var result = salary * (1 - tax_number);
+
+            return result;
+
+        }
+    </script>
+
+</body>
+</html>

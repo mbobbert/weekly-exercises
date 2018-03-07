@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--HTML
+        step 1: create two fields, a button and a selector DONE
+        Javascript
+        step 2: insert jquery file DONE
+        step 3: put event listener on the button and tell him which function to perform
+        step 3: create function that does if statements with the selector -->
+
+        <input type="number" id="field1">
+
+        <select name="operators" id="operators">
+            <option >+</option>
+            <option >-</option>
+            <option >*</option>
+            <option >/</option>
+        </select>
+
+        <input type="number" id="field2">
+
+        <button id="btn">Click to calculate</button>
+        <p id="insert_output"></p>
+
+        <script src="jquery-3.3.1.min.js"></script>
+
+
+        <script>
+            $("#btn").click(insertCalculation);
+
+            function insertCalculation() {
+                $("#insert_output").html(perform_calculation);
+                console.log("hello");
+            }
+
+            function perform_calculation () {
+
+                var fieldOne = $("#field1");
+                var fieldOne_value = parseInt(fieldOne.val());
+                console.log(fieldOne_value);
+
+                var fieldTwo = $("#field2");
+                var fieldTwo_value = parseInt(fieldTwo.val());
+                console.log(fieldTwo_value);
+
+
+                var selector = $("#operators").val();
+
+                if (selector === "+") {
+                    return (fieldOne_value + fieldTwo_value);
+                } else if (selector === "-") {
+                    return(fieldOne_value - fieldTwo_value);
+                } else if (selector === "*") {
+                    return(fieldOne_value * fieldTwo_value);
+                } else
+                    return(fieldOne_value / fieldTwo_value);
+            }
+
+
+        </script>
+</body>
+</html>

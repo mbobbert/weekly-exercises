@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+        button {
+            width: 25rem;
+            height: 3rem;
+        }
+
+        .side1 {
+            background-image:url("img/side1.png");
+        }
+
+        .side2 {
+            background-image:url("img/side2.png");
+        }
+
+        .side3 {
+            background-image:url("img/side3.png");
+        }
+
+        .side4 {
+            background-image:url("img/side4.png");
+        }
+
+        .side5 {
+            background-image:url("img/side5.png");
+        }
+
+        .side6 {
+            background-image:url("img/side6.png");
+        }
+
+    #random_number {
+        width: 338px;
+        height: 338px;
+        border: 1px solid white;
+    }
+
+    </style>
+
+    <script>
+        function random_dice(lower, upper) {
+            return Math.round(
+                lower + Math.random() * (upper - lower)
+                );
+        }
+
+        function roll() {
+            var element = document.getElementById('random_number');
+            if (random_dice(1,6) === 1) {
+                element.innerHTML = '<img src="img/side1.png">';
+            }
+            else if (random_dice(1,6) === 2) {
+                element.innerHTML = '<img src="img/side2.png">';
+            }
+            else if (random_dice(1,6) === 3) {
+                element.innerHTML = '<img src="img/side3.png">';
+            }
+            else if (random_dice(1,6) === 4) {
+                element.innerHTML = '<img src="img/side4.png">';
+                }
+            else if (random_dice(1,6) === 5) {
+                element.innerHTML = '<img src="img/side5.png">';
+            }
+            else
+                element.innerHTML = '<img src="img/side6.png">';
+            }
+
+
+    </script>
+
+        <button onClick="roll()">Click this button for a random number!</button>
+        <div id="random_number"></div>
+    </body>
+    </html>
+
+</body>
+</html>

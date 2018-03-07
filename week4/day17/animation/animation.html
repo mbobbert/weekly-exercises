@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.appear.js"></script>
+</head>
+<body>
+    <button id="my-btn1">Click me please 1 !</button>
+    <div id="square1"></div>
+
+    <!--<button id="my-btn2">Click me please 2 !</button>
+    <div id="square2"></div>-->
+
+    <button id="my-btn3">Click me please 3 !</button>
+    <div class="progress">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+        <div id="bar4" class="bar"></div>
+
+    </div>
+
+    <script>
+        $("#my-btn1").click(function() {
+            $("#square1").fadeToggle(3000);
+        });
+
+        //$("#my-btn2").click(function() {
+            //$("#square2").animate(
+                //{'left': '-=1500px'},
+                //2000
+            //)
+        //});
+
+        $('.progress').appear();
+
+        function progress(barID, value) {
+            $(barID).animate({'width': value}, 2000);
+        }
+
+
+            $('.progress').on('appear', function() {
+                progress('#bar1', '50%');
+                progress('#bar2', '60%');
+                progress('#bar3', '70%');
+                progress('#bar4', '50%');
+            });
+
+    </script>
+</body>
+</html>

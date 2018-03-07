@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">This button has been clicked <span id="numberOfTime">0</span> times</button>
+
+    <script src="jquery-3.3.1.min.js"></script>
+        <script>
+
+            $('#btn').click(insertNumber);
+
+            function insertNumber() {
+                $("#numberOfTime").html(performCalc);
+            }
+
+            function performCalc() {
+                var times = $("#numberOfTime").html();
+                var times_number = parseInt(times);
+                times_number ++;
+                $("#numberOfTime").html(times_number);
+            }
+
+            //console.log(123)
+            //console.log(typeof 123)
+//
+            //console.log('123')
+            //console.log(typeof '123')
+//
+           //var name = "Mireille";
+           //console.log(name);
+           //var age = 29;
+           //console.log(age);
+//
+           //function logName(){
+           //console.log('Mireille Bobbert');
+           //};
+           //logName();
+//
+           //function log(value) {
+               //console.log(value);
+           //}
+//
+           //log("Mireille Bobbert");
+           //log(29);
+//
+           //function getType(value) {
+               //return (typeof value);
+           //}
+//
+           //console.log(getType(name));
+
+
+        </script>
+</body>
+</html>

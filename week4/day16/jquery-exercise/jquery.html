@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <style>
+        body {
+            margin:0;
+        }
+
+        #mousepos {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        border: 1px solid black;
+        padding: 0.25em;
+        }
+
+        #toggle {
+        display: inline-block;
+        border-radius: 0.5em;
+        padding: 0.5em;
+        background-color: teal;
+        color: #ffffff;
+        cursor: pointer;
+        }
+
+        #toggle.clicked {
+        background-color: violet;
+        }
+
+        #container > div {
+            display:none;
+        }
+
+        #container.show_odd .odd {
+            display: block;
+        }
+
+        #container.show_even .even {
+            display: block;
+        }
+
+
+</style>
+
+</head>
+<body>
+
+
+<h1 id="headline">jQuery</h1>
+
+<script>
+var plain_h1 = document.getElementById('headline');
+var jq_h1 = $('#headline');
+console.log(plain_h1); //returns basic element object
+console.log(jq_h1) ; //returns object of CSS class (jQuery selection object)
+
+jq_h1.html('the new headline');
+
+plain_h1 =$(plain_h1) // turns the element into a jquery selection
+plain_h1.html("the new headline;);")
+</script>
+
+<div class="output">Output element #1</div>
+<div class="output">Output element #2</div>
+<div class="output">Output element #3</div>
+
+
+<script>
+    $('.output').html("next text");
+    $('.output').css('background-color', 'red');
+</script>
+
+<div id="mousepos">
+    <div>X: <span id="mousepos_x"></span></div>
+    <div>Y: <span id="mousepos_y"></span></div>
+</div>
+
+<script>
+    document.addEventListener("mousemove", function(event) {
+        console.log(event);
+        document.getElementById('mousepos_x').innerHTML = event.clientX;
+        document.getElementById('mousepos_y').innerHTML = event.clientY;
+
+    });
+
+    //$(document).on("mousemove", function(event){
+        //console.log(event);
+        //$("#mousepos_x").html(event.clientX);
+        //$("#mousepos_x").html(event.clientY);
+    //});
+</script>
+
+    <div id="toggle">CLICK ME</div>
+<script>
+$("#toggle").click(function(event) {
+    console.log(this); // within a jquery event handling function
+    $(this).toggleClass("clicked");  //'this' is the element that fired the event
+});
+</script>
+
+<div id="container" class="show_even">
+    <div class="odd">
+        THIS IS ODD
+    </div>
+
+    <div  class="even">
+        THIS IS EVEN
+    </div>
+</div>
+
+    <script>
+    $('#container').on('click', function(event) {
+        $(this).toggleClass('show_even');
+        $(this).toggleClass('show_odd');
+        });
+
+        </script>
+</body>
+</html>

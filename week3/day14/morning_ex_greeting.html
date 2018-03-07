@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hey you</title>
+</head>
+<body>
+    <p>What's your name?</p>
+    <input type="text" id="name"/>
+
+    <!--
+        1. btn click listerner
+        */-->
+    <button onClick="hello()">Click me for your morning greeting</button>
+    <p id="greeting"></p>
+
+    <script>
+
+        /*
+
+3. render the greeting
+*/
+        function hello() {
+            element = document.getElementById("greeting");
+            element.innerHTML = "hello " + name() + "!";
+            console.log (name());
+        }
+
+        /*<!--
+
+2. get value of name from input
+
+*/
+
+        function name() {
+            var name_input = document.getElementById("name").value;
+            return name_input;
+
+        }
+    </script>
+
+ <!--
+1. btn click listerner
+2. get value of name from input
+3. render the greeting
+*/-->
+
+</body>
+</html>

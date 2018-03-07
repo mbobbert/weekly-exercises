@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 10</title>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <label for="nationality">Select nationality:</label><br>
+    <select id="nationality">
+        <option value="czech" selected>Czech</option>
+        <option value="foreign">Foreign</option>
+    </select>
+
+    <div id="forms">
+
+        <form action="" id="czech">
+            <label for="op">Zadejte číslo občanského průkazu:</label><br>
+            <input type="text" id="op" name="op" value=""><br>
+            <br>
+            <input type="submit" value="Odeslat">
+        </form>
+
+        <form action="" id="foreign">
+            <label for="passport">Enter the number of your passport:</label><br>
+            <input type="text" id="passport" name="passport" value=""><br>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+
+    </div>
+
+    <script>
+        $('#nationality').change(function() {
+
+            var nationality_option = $('#nationality').val()
+            console.log(nationality_option);
+
+            if (nationality_option === 'Foreign') {
+                console.log("foreign is selected");
+                $('#forms#czech').hide()
+                $('#forms#foreign').show()
+            } else if (nationality_option === 'Czech') {
+                $('#forms#foreign').hide();
+                $('#forms#czech').show();
+            }
+        })
+    </script>
+
+</body>
+</html>

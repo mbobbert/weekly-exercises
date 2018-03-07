@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1. HTML
+            1. create a div with id square
+        2. javascript
+            1. insert the jquery library
+            2. create css styles for the square
+                1. first CREATE A VARIABLE THAT GRABS THE SQUARE
+                1. width
+                2. height
+                3. background color
+                4. position
+                5. left and top ((window.innerWidth - 100) / 2) + "px";
+                                ((window.innerHeight - 100) / 2) + "px";
+
+            3. add event listener to a keyup press, and give a name to the function that will tell the keyup what to do
+            4. create 4 functions:
+                1. when keyUP is pressed  THEN MOVE 10 STEPS
+                2. when key DOWN is pressed THEN MOVE 10 STEPS
+                3. when keyLEFT is pressed THEN MOVE 10 STEPS
+                4. when key RIGHT is pressed THEN MOVE 10 STEPS
+            5. create a random color function when ENTER is pressed -->
+
+    <div id="square"></div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+
+        var square = $("#square");
+
+        square.css("width", "100px");
+        square.css("height" , "100px");
+        square.css("background" , "red");
+        square.css("position" , "absolute");
+        square.css("left" , ((window.innerWidth - 100) / 2) + "px");
+        square.css("top" , ((window.innerHeight - 100) / 2) + "px");
+
+        $(document).on('keyup', keyPressed);
+
+        function keyPressed(event) {
+            console.log(event);
+
+            if (event.key == "ArrowRight") {
+                console.log("arrowRight is pressed");
+                var left = square.css("left");
+                left = parseInt(left);
+                left = left + 10;
+                square.css("left") = left + 'px';
+            } else if (event.key == "ArrowLeft") {
+                console.log("arrowLeft is pressed");
+                var left = square.css("left");
+                left = parseInt(left);
+                left = left - 10;
+                square.css("left") = left + 'px';
+            } else if (event.key == "ArrowDown") {
+                console.log("arrowDown is pressed");
+                var top = square.css("top");
+                top = parseInt(top);
+                top = top + 10;
+                square.css("top") = top + 'px';
+            } else if (event.key =="ArrowUp") {
+            console.log("arrowUp is pressed");
+                var top = square.css("top");
+                top = parseInt(top);
+                top = top - 10;
+                square.css("top") = top + 'px';
+            } else if (event.keyCode == 13) {
+                var color = square.css("background");
+                color = "blue";
+                square.css("background") = color;
+            } else if (event.key == "s") {
+                var hue = square.css("background");
+                hue ='rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+                square.css("background") = hue;
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

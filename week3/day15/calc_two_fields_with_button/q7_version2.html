@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 7</title>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h2>Tasks</h2>
+    <ol id="todo_tasks">
+        <li class="task done">Wake up</li>
+        <li class="task done">Get up</li>
+        <li class="task">Have breakfast</li>
+        <li class="task done">Go to class</li>
+        <li class="task done">Start test</li>
+        <li class="task">Finish test</li>
+        <li class="task">Profit!</li>
+    </ol>
+
+    <h2>Done tasks</h2>
+    <ol id="done_tasks">
+    </ol>
+
+    <script>
+        $(document).on('click', function() {
+            var doneTasks = $('.task.done').html()
+            console.log(doneTasks);
+            return doneTasks;
+            $('#done_tasks').append(
+            $('.done').html()
+            )
+
+            //$('.done').on('mouseover', function() {
+           //     $('#done_tasks').append(
+            //$('.done').html()
+            //)
+            //})
+            //$('#done_tasks').append(
+            //$('.done').html()
+            //)
+        })
+    </script>
+
+</body>
+</html>

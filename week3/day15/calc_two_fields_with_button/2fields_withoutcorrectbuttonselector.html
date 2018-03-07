@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <!--
+    1. create 2 inputs and a button DONE
+    2. insert the addition signs etc DONE
+    3. set up javascript by selecting both fields and creating a function
+    4. return the output
+    5. put output back to empty p
+    //-->
+
+
+    <!-- MAIN BODY -->
+
+    <input type="number" id="field1">
+
+    <select name="operators" id="operators">
+        <option value="addition">+</option>
+        <option value="substraction">-</option>
+        <option value="multiplication">*</option>
+        <option value="division">/</option>
+    </select>
+
+    <input type="number" id="field2">
+
+    <button onClick="insertCalculation()">Calculate</button>
+
+    <p id="output"></p>
+
+    <!-- FUNCTIONS -->
+
+<script>
+    function insertCalculation() {
+        var element = document.getElementById("output");
+        element.innerHTML = computeOutput();
+    }
+
+    function computeOutput() {
+
+        var element2 = document.getElementById("operators") // a grabbing the element by ID is created for the operator<select>
+
+        var field1 = document.getElementById("field1");
+        var field1_number = parseInt(field1.value);
+        var field2 = document.getElementById("field2");
+        var field2_number = parseInt(field2.value);
+
+
+        if ( element2.value === "addition") {
+            return(field1_number + field2_number);
+        } else if ( element2.value === "substraction") {
+            return(field1_number - field2_number);
+        } else if ( element2.value === "multiplication") {
+            return(field1_number * field2_number);
+        } else return(field1_number / field2_number);
+
+
+    }
+
+</script>
+
+</body>
+</html>

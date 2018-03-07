@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <!--
+    1. create 2 inputs and a button DONE
+    2. insert the addition signs etc DONE
+    3. set up javascript by selecting both fields and creating a function
+    4. return the output
+    5. put output back to empty p
+    //-->
+
+        <!-- teacher's solution
+    1. listen for clicking on button
+    2. get value of number 1, number 2 and operand
+    3. according operand decide which operation
+    4. show result
+    //-->
+
+
+    <!-- MAIN BODY -->
+
+    <input type="number" id="field1">
+
+    <select name="operators" id="operators">
+        <option value="addition">+</option>
+        <option value="substraction">-</option>
+        <option value="multiplication">*</option>
+        <option value="division">/</option>
+    </select>
+
+    <input type="number" id="field2">
+
+    <button id="btn">Calculate</button>
+
+    <p id="output"></p>
+
+    <!-- FUNCTIONS -->
+
+<script>
+// step 1 listen for clicking
+    document.getElementById("btn").addEventListener('click', insertCalculation);
+
+
+    function computeOutput() {
+
+
+        // 1. select element from DOM with all the content
+        var field1 = document.getElementById("field1");
+        // 2. we only want the value of field1 & 3. then parseInt it
+        //var element = documentgetElementById('n1')
+        // var value = element.value;
+        // var n1 = parseFloat(value);
+        var field1_number = parseInt(field1.value);
+        var field2 = document.getElementById("field2");
+        var field2_number = parseInt(field2.value);
+
+        var element2 = document.getElementById("operators") // a grabbing the element by ID is created for the operator<select>
+                                                            // we treat the select the same as input fields, so need .value
+                                                            // no difference between select and input
+
+// step 3
+
+        if ( element2.value === "addition") {
+            return(field1_number + field2_number);
+        } else if ( element2.value === "substraction") {
+            return(field1_number - field2_number);
+        } else if ( element2.value === "multiplication") {
+            return(field1_number * field2_number);
+        } else return(field1_number / field2_number);
+
+// step 4 show the result
+
+function insertCalculation() {
+        var element = document.getElementById("output");
+        element.innerHTML = computeOutput();
+    }
+
+    }
+
+</script>
+
+</body>
+</html>

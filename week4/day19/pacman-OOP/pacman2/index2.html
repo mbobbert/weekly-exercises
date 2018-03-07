@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman recreated</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pacs">
+    </div>
+    <div id="walls">
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="pacman2.js"></script>
+    <script src="wall2.js"></script>
+    <script>
+
+        var pacman1 = new Pacman (
+            "alex", "green", 7, 3, "up", "open")
+            console.log(pacman1.info());
+
+        pacman1.createHTML();
+        //pacman1.updateHTML();
+//
+        //$(document).keydown(function(e) {
+			//if(e.keyCode === 39) {
+				//pacman1.step('right');
+			//} else if(e.keyCode === 37) {
+				//pacman1.step('left');
+			//} else if(e.keyCode === 38) {
+				//pacman1.step('up');
+			//} else if(e.keyCode === 40) {
+				//pacman1.step('down');
+			//}
+        //});
+
+        var wall1 = new Wall (
+            'wall_of_china', 4, 6, 1, 1, "green");
+        console.log(wall1.info());
+
+        wall1.createHTML();
+        wall1.updateHTML();
+
+        $(document).keyup(function(event) {
+            console.log(event);
+            if (event.key === "ArrowRight") {
+                wall1.move('right')
+            } else if (event.key === "ArrowLeft") {
+                wall1.move('left')
+            } else if (event.key === "ArrowUp") {
+                wall1.move('up')
+            } else if (event.key === "ArrowDown") {
+                wall1.move('down')
+            }
+        });
+
+    </script>
+
+
+</body>
+</html>

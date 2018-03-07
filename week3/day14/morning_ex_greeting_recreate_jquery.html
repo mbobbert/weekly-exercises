@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hey you</title>
+    <style>
+        h1 {
+            font-size: 12rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Step 1: html DONE
+            1. Create an h1 that says ' hello'
+            2. create a button 'press me'
+            3. create an input field that asks person for his name
+        Step 2: javascript
+            1. insert jquery library DONE
+            2. create an event listener for the button and give function a name of what it is supposed to do
+            3. create the actual function that grabs the h1 and returns the name of the person in a greeting
+                1. don't forget to create a variable for the input field of the person's name
+        Step 3: CSS DONE
+            1. make the H1 really big
+    -->
+
+    <h1 class="insert_greeting">Hello</h1>
+    <p>What is your name?
+            <input type="text" class="name_person">
+    </p>
+
+    <button class="btn">Press me for your greeting</button>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+
+    $(".btn").click(insertName);
+
+    function insertName () {
+        var namePerson = $(".name_person").val();
+
+        $(".insert_greeting").html("Hello " + namePerson);
+    }
+
+    </script>
+
+
+
+
+</body>
+</html>

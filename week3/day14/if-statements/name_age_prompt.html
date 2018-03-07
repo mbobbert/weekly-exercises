@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>If statements</title>
+</head>
+<body>
+    <script>
+    var name = prompt("Hi, my name is Nintendo, what is your name?");
+
+    alert("hi " + name + ". Nice to meet you!");
+
+
+//ask for age//
+    var age = prompt("How old are you?");
+
+    //if(age < 18) {
+        //alert("you aren\'t old enough to see this content!")
+            //}
+        //else if (age > 70) {
+            //alert("you are too old");
+        //} else {
+            //alert("welcome, it's nice you're an adult");
+        //}
+
+    console.log(age);
+
+    do {
+        var age = prompt("How old are you?");
+    } while (   age == "" || isNaN(age));
+
+    var age = prompt("How old are you?");
+    while (   age == "" || isNaN(age)  ) {
+        var age = prompt("How old are you?");
+    }
+
+//ask for height //
+    //var height = prompt("How tall are you in cm?");
+//
+    //if (height < 120) {
+        //alert("you are too small");
+    //} else if (height > 200) {
+        //alert("you are too tall!");
+    //} else {
+        //alert("your height is excellent!");
+    //}
+
+    </script>
+
+</body>
+</html>

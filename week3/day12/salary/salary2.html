@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salary questions</title>
+</head>
+<body>
+
+    <p>
+        How much do you earn per hour? <br/>
+        <input type='number' id = "pay_per_hour" />
+
+    </p>
+    <p>
+        How many hours do you work per day? <br/>
+        <input type='number' id = "hours_per_day" />
+
+    </p>
+    <p>
+        How many days do you work per month?<br/>
+        <input type='number' id = "days_month" />
+    </p>
+
+    <button onClick="insert_salary()">Click me to see how much you earn per month</button>
+    <p id="salary_output"></p>
+
+    <script>
+        function compute_salary(payHour, hoursDay, dayMonth) {
+            var payHour = document.getElementById("pay_per_hour");
+            var hoursDay = document.getElementById("hours_per_day");
+            var dayMonth = document.getElementById("days_month");
+        return payHour * hoursDay * dayMonth;
+        }
+
+        function insert_salary() {
+            var element = document.getElementById('salary_output');
+            element.innerHTML = compute_salary();
+        }
+
+    </script>
+
+
+</body>
+</html>

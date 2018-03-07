@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<!--Step 1: h t ml
+        1. create two input fields, a button, and a div DONE
+    Step 2: javascript
+        1. insert jquery script DONE
+        2. create an event listener for the button inlcuding a name of a function that inserts the value in the div DONE
+        3. create the actual function that insert the value DONE
+        4. create a second function that performs the calculation
+            1. create variable field 1, and field 1 number
+            2. idem variable 2
+            3. create variable for the selector variable
+            4. create if statement for the calculation
+            5. return the result
+
+-->
+    <input type="number" id="field1">
+
+        <select id="operators">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+    <input type="number" id ="field2">
+
+    <button id="btn">click me</button>
+    <p id="insert_output"></p>
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $("#btn").click(insertCalculation);
+
+        function insertCalculation() {
+            $("#insert_output").html(calculator);
+        }
+
+        function calculator() {
+            var fieldOne = $("#field1");
+            var fieldOne_value = parseInt(fieldOne.val());
+            console.log(fieldOne_value);
+
+            var fieldTwo = $("#field2");
+            var fieldTwo_value = parseInt(fieldTwo.val());
+            console.log(fieldTwo_value);
+
+            var selector = $("#operators");
+            var selector_value = selector.val();
+            console.log(selector_value);
+
+            if (selector_value === '+') {
+                return (fieldOne_value + fieldTwo_value);
+            } else if (selector_value === '-') {
+                return (fieldOne_value - fieldTwo_value);
+            } else if (selector_value === '/') {
+                return (fieldOne_value / fieldTwo_value);
+            } else
+                return (fieldOne_value * fieldTwo_value);
+
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

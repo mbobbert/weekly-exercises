@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        .right-open {
+            background-image:url('img/popen-right.png');
+        }
+        .right-close {
+            background-image:url('img/pclosed-right.png');
+        }
+
+        .left-open {
+            background-image:url('img/popen-left.png');
+        }
+
+        .left-close {
+            background-image:url('img/pclosed-left.png');
+        }
+
+        .right {}
+
+        .left {}
+
+        #pacman {
+            width: 65px;
+            height: 65px;
+            border: 1px solid black;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="pacman" class="right-open"></div>
+    <button id='btn'>Click me</button>
+
+
+<script>
+    $('#btn').on('click', function(event) {
+
+        $('#pacman').toggleClass('right-open right-close');
+
+        console.log(event);
+    })
+
+   // var pacman = $("#pacman");
+
+//pacman.css("position" , "absolute");
+//pacman.css("left" , ((window.innerWidth - 100) / 2) + "px");
+//pacman.css("top" , ((window.innerHeight - 100) / 2) + "px");
+
+
+    $(document).on('keyup', function(event) {
+        console.log(event);
+
+
+       if (event.key == "ArrowRight") {
+        console.log("arrowRight is pressed");
+        $("#pacman").animate({left: '+=64'}, 1000);
+        $('#pacman').addClass('right');
+        if ( $('#pacman').hasClass('right-open')) {
+        $('#pacman').removeClass('right-open');
+        $('#pacman').addClass('right-close');
+        } else if ( $('#pacman').hasClass('right-close')) {
+            $('#pacman').removeClass('right-close');
+            $('#pacman').addClass('right-open');
+        } else $('#pacman').removeClass();
+        //$('#pacman').toggleClass('right-open right-close');
+        //var left = pacman.css("left");
+        //left = parseInt(left);
+        //left = left + 10;
+        //$("#pacman").css("left",  "+=64");
+
+       } else if (event.key =="ArrowLeft") {
+        $("#pacman").animate({left: '-=64'}, 1000);
+        $('#pacman').removeClass();
+        $('#pacman').addClass('left');
+
+
+        console.log("arrowLeft is pressed");
+        if ( $('#pacman').hasClass('left')) {
+        $('#pacman').addClass('left-open');
+
+        } else if ( $('#pacman').hasClass('left-close')) {
+            $('#pacman').removeClass('left-close');
+            $('#pacman').addClass('left-open');
+        } else $('#pacman').removeClass();
+
+
+       }
+    })
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

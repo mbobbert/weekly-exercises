@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman 3</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="wall3.js"></script>
+    <script src="pacman.js"></script>
+
+</head>
+<body>
+    <div id="pacs">
+    </div>
+    <div id="walls">
+    </div>
+
+
+    <script>
+
+        
+        var wall1 = new Wall (
+            'wall of china', 1, 1, 5, 3
+        );
+
+        console.log(wall1.info());
+
+        wall1.createHTML();
+        wall1.updateHTML();
+
+        $(document).on('keyup', function(event) {
+            if (event.key === "ArrowRight") {
+                wall1.move("right")
+            } else if (event.key ==="ArrowLeft") {
+                wall1.move("left")
+            } else if (event.key ==="ArrowUp") {
+                wall1.move("up")
+            } else if (event.key ==="ArrowDown") {
+                wall1.move("down")
+            }
+        })
+
+    </script>
+</body>
+</html>

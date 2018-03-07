@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Question 9</title>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <label for="month">Choose a month:</label><br>
+    <select name="month" id="month"></select>
+
+    <script>
+        var months = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ];
+
+        //for (months = 0; months < months.length; months++) {
+            //$('#month').html('option value', ' :', '[months]');
+           // console.log(months);
+        //}
+        for (i = 0; i < months.length; i ++ ) {
+            //console.log(months);
+            $('#month').append(
+                $('<option value="' +[i +1]+ '">').html(months[i]))
+        }
+
+//var i in months
+
+    </script>
+
+</body>
+</html>

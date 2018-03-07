@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll with Dice recreated</title>
+
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+    <!-- 1. Create HTML DONE
+            1. create a button
+            2. create a div
+        2. create the javascript functions
+            1. insert the jquery library above the script
+            2. create an event listener for the button:
+                - when clicked, grab the div element, and insert a random number
+                -
+            3. create a function for what the die should do:
+                - randomly give back number between 1 and 6
+
+            4. return the result
+
+    -->
+
+
+    <button id ='btn'> click me</button>
+    <div id="insert_output"></div>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script>
+
+        $('#btn').click(insertRandomNumber);
+
+        function insertRandomNumber() {
+            $('#insert_output').html(calculateDieNumber);
+        }
+
+
+        function calculateDieNumber() {
+
+            if (calculateRandomNumber(1,6) === 1) {
+                $('#insert_output').html('<img src="img/side1.png">');
+            } else if (calculateRandomNumber(1,6) === 2 ) {
+                $('#insert_output').html('<img src="img/side2.png">');
+            } else if (calculateRandomNumber(1,6) === 3) {
+                $('#insert_output').html('<img src="img/side3.png">');
+            } else if (calculateRandomNumber(1,6) === 4 ) {
+                $('#insert_output').html('<img src="img/side4.png">');
+            } else if (calculateRandomNumber(1,6) === 5) {
+                $('#insert_output').html('<img src="img/side5.png">');
+            } else
+                $('#insert_output').html('<img src="img/side6.png">');
+        }
+
+        function calculateRandomNumber(lower,upper) {
+                return( Math.round(
+                    lower + Math.random() * (upper - lower)
+                    ));
+            }
+
+
+    </script>
+
+
+t.div>
+</html>

@@ -1,0 +1,18 @@
+.qtogl {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transition: 400ms;
+	cursor: pointer;
+}
+
+.check {
+	background-image: url('img/check.svg');
+}
+
+.cross {
+	background-image: url('img/cross.svg');
+}
+
+.question {
+	background-image: url('img/question.svg');
+}

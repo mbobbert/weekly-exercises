@@ -1,0 +1,21 @@
+.qlist {
+	list-style-type: none;
+}
+
+.qlist li {
+	list-style-type: none;
+	margin-bottom: 1rem;
+}
+
+.qlist .qtogl {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	vertical-align: middle;
+}
+
+.qlist-text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1rem;
+}

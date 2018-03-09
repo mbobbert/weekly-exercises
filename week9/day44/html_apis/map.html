@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <div id="map" style="height:400px"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1MDV7YL_ruIZgSTk_buouK8KiPXVuVA&callback=initMap"></script>
+        <script>
+            //init map function once map is loaded
+            function initMap() {
+            // step 1. define GPS point latitude and longitude
+            var europe = {lat: 43.8326116, lng: -12.9184482}
+
+
+            // step 2. load the map
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 6,
+                center: {lat: 50.0593324, lng: 14.1854416},
+            });
+
+            //step 3. set the marker
+            //var marker = new google.maps.Marker({
+                //position: {lat: 52.3543168, lng: 4.6184424},
+                //map: map
+            //});
+            }
+        </script>
+
+
+</body>
+</html>

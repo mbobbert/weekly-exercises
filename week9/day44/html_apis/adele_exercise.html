@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing audio file</title>
+</head>
+<body>
+
+    <img id="control_image" src="Adele_-Saturday-Night-Live-Photoshoot-2015--01.jpg">
+    <audio id="my_audio" src="Adele - Hello.mp3">
+            Your browser does not support HTML5 audio.
+    </audio>
+
+
+        <script>
+            var playing = false;
+            document.getElementById("control_image").addEventListener('click', function() {
+                if(playing) {
+                    document.getElementById('my_audio').pause();
+                    playing = false;
+                } else {
+                    document.getElementById('my_audio').play();
+                    playing = true;
+                }
+
+
+            });
+
+        </script>
+
+
+</body>
+</html>

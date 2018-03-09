@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Playing audio file</title>
+</head>
+<body>
+
+   <!-- <audio src="http://techslides.com/demos/samples/sample.mp3" controls>
+            Your browser does not support HTML5 audio.
+    </audio>-->
+
+    <!--<audio controls>
+            <source src="http://techslides.com/demos/samples/sample.mp3">
+            <source src="http://techslides.com/demos/samples/sample.ogg">
+            Your browser does not support HTML5 audio.-->
+    </audio>
+
+    <audio id="my_audio" src="http://techslides.com/demos/samples/sample.mp3" controls>
+            Your browser does not support HTML5 audio.
+        </audio>
+        <button id="pause">pause</button>
+        <script>
+            document.getElementById('my_audio').play();
+
+            document.getElementById('pause').addEventListener('click', function(){
+                document.getElementById('my_audio').pause();
+            });
+        </script>
+
+
+</body>
+</html>

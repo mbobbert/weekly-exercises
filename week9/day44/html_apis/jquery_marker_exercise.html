@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+        <div id="map" style="height:400px"></div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDd1MDV7YL_ruIZgSTk_buouK8KiPXVuVA&callback=initMap"></script>
+        <script>
+
+            var bars =
+
+            [
+                { 'lat': 50.07843, 'lon': 14.4247933, 'name': "Pivotéka illegal beer" },
+                { 'lat': 50.07949, 'lon': 14.4238383, 'name': "Rocky O'Reilly's Irish Pub & Restaurant" },
+                { 'lat': 50.080089, 'lon': 14.4232913, 'name': "Jáma" },
+                { 'lat': 50.079545, 'lon': 14.4207383, 'name': "Novoměstský pivovar" },
+                { 'lat': 50.078649, 'lon': 14.4198844, 'name': "HOOTERS Praha" },
+                { 'lat': 50.078834, 'lon': 14.4147473, 'name': "U Fleků" },
+                { 'lat': 50.076137, 'lon': 14.4261773, 'name': "The PUB" },
+                { 'lat': 50.077783, 'lon': 14.4305223, 'name': "Bílá kráva" }
+            ];
+
+            //init map function once map is loaded
+            function initMap() {
+            // step 1. define GPS point latitude and longitude
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: {lat: 50.0593324, lng: 14.1854416},
+            });
+
+            // php syntax foreach($bars as $index=>bar)
+            // insert jquery foreach loop here
+            $.each(bars, function(index, bar) {
+                console.log(bar);
+
+            var marker = new google.maps.Marker({
+            position: {lat: bar.lat, lng: bar.lon},
+            //first map is name of property, second one is variable that we created earlier in file
+            label: bar.name,
+            map: map
+            });
+
+            });
+
+
+
+            if(navigator.geolocation) { // we check if the browser supports geolocation
+            navigator.geolocation.getCurrentPosition(function(location) {
+                // stuff to do with the location
+
+                var marker = new google.maps.Marker({
+                position: {lat: location.coords.latitude, lng: location.coords.longitude},
+                //first map is name of property, second one is variable that we created earlier in file
+                map: map
+                });
+
+                }, function(error) {
+                // stuff to do with an error
+                });
+            }
+        }
+        </script>
+
+</body>
+</html>

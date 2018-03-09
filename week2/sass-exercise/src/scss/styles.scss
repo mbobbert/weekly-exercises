@@ -1,0 +1,45 @@
+$titleFont: "Arial";                    // these are variables
+$titleColor: #FFCC00;
+$descriptionWidth: 100px;
+
+h1 {
+    font-family: $titleFont;
+    color: $titleColor;
+    border-radius: 20px;
+}
+
+@mixin border-radius($radius) {        // this is a mixin
+    webkit-border-radius: $radius;
+    moz-border-radius: $radius;
+    o-border-radius: $radius;
+    ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+%descriptions {                        // this is an extension
+    font-family: "Helvetica";
+    border: 2px solid black;
+    padding: 20px;
+    position: absolute;
+    width: $descriptionWidth;
+    @include border-radius(10px);
+}
+
+div {                                   // this is how nesting works
+    #desc1 {
+        @extend %descriptions;
+        background-color: green;
+    }
+
+    #desc2 {
+        @extend %descriptions;
+        background-color: yellow;
+    }
+
+    #desc3 {
+        @extend %descriptions;
+        background-color: orange;
+    }
+}
+
+@import "footer"                        // this is a partial

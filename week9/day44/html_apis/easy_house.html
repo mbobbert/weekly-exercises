@@ -1,0 +1,56 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <canvas id="canvas" width="500" height="500" style="width:500px; height:500px; border: 1px solid pink">
+            Update your browser to use canvas
+        </canvas>
+
+        <script>
+
+            // STEP 1. SET THE CONTEXT
+            var canvas = document.getElementById('canvas');
+            // tool that will help you work with canvas
+            var context = canvas.getContext('2d');
+
+            // STEP 2. SET stroke style and line width BEFORE drawing something!
+            context.lineWidth = 4;
+            context.strokeStyle = '#ffff00';
+
+            // STEP 3. START THE FIRST LINE
+            //grab the pencil and go to (0,0) -> prepare to draw
+            context.beginPath();
+            // x coordinate and y coordinate 10, 10. Cursor moves to 10,10
+
+            context.moveTo(10, 10);
+            //lineTo get line from 10 to 100
+            context.lineTo(10, 100);
+            // then get line from 100,100 to 100,10
+            context.lineTo(100, 100);
+            context.lineTo(100, 10);
+            context.lineTo(10, 10);
+            context.lineTo(100, 100);
+            context.lineTo(200, 45);
+            context.lineTo(100, 10);
+            context.lineTo(10, 100);
+
+
+            // STEP 4. CLOSE THE PATH
+            //closePath will draw line from end of path to beginning
+            //context.closePath();
+            //Stroke is one of the brushes
+
+            //STEP 5. FILL IN THE DRAWING
+            context.fillStyle = '#ffa500';
+            context.fill();
+
+            // STEP 6. STROKE  = DRAW THE ACTUAL LINE
+            context.stroke();
+
+
+
+
+        </script>
+    </body>
+</html>

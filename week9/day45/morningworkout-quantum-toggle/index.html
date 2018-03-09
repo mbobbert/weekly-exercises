@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="qtoggle/qtoggle.css">
+	<link rel="stylesheet" href="index.css">
+	<title>QToggle</title>
+</head>
+<body>
+	<main id="app">
+		<!--<div class="qtogl qtogl-demo question"></div>-->
+	</main>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="qtoggle/qtoggle.js"></script>
+
+	<script>
+		// goal is not to have the app component in html, but to render the code in javascript on the fly
+		// we want to create a pargrapfh of text, by creating a component with two functions
+		// function 1: render: creates the html for the element. it is then in memory, but not on the page
+		// function 2: mount: takes the render function, lets it create the element, and then puts it on the page 'mount something on the wall'
+		//
+		//create object of the component
+		var qtogl = new QToggle();
+		// mount it on place in html which is app-element
+		qtogl.mount($('#app'));
+		qtogl.flip();
+		qtogl.flip();
+
+
+	</script>
+</body>
+</html>

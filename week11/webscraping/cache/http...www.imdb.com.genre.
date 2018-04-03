@@ -1,0 +1,2033 @@
+
+
+
+
+<!DOCTYPE html>
+<html
+xmlns:og="http://ogp.me/ns#"
+xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        
+<script type='text/javascript'>var ue_t0=ue_t0||+new Date();</script>
+<script type='text/javascript'>
+
+var ue_csm = window,
+    ue_hob = +new Date();
+(function(d){var e=d.ue=d.ue||{},f=Date.now||function(){return+new Date};e.d=function(b){return f()-(b?0:d.ue_t0)};e.stub=function(b,a){if(!b[a]){var c=[];b[a]=function(){c.push([c.slice.call(arguments),e.d(),d.ue_id])};b[a].replay=function(b){for(var a;a=c.shift();)b(a[0],a[1],a[2])};b[a].isStub=1}};e.exec=function(b,a){return function(){if(1==window.ueinit)try{return b.apply(this,arguments)}catch(c){ueLogError(c,{attribution:a||"undefined",logLevel:"WARN"})}}}})(ue_csm);
+
+
+    var ue_err_chan = 'jserr';
+(function(d,e){function h(f,b){if(!(a.ec>a.mxe)&&f){a.ter.push(f);b=b||{};var c=f.logLevel||b.logLevel;c&&c!==k&&c!==m&&c!==n&&c!==p||a.ec++;c&&c!=k||a.ecf++;b.pageURL=""+(e.location?e.location.href:"");b.logLevel=c;b.attribution=f.attribution||b.attribution;a.erl.push({ex:f,info:b})}}function l(a,b,c,e,g){d.ueLogError({m:a,f:b,l:c,c:""+e,err:g,fromOnError:1,args:arguments},g?{attribution:g.attribution,logLevel:g.logLevel}:void 0);return!1}var k="FATAL",m="ERROR",n="WARN",p="DOWNGRADED",a={ec:0,ecf:0,
+pec:0,ts:0,erl:[],ter:[],mxe:50,startTimer:function(){a.ts++;setInterval(function(){d.ue&&a.pec<a.ec&&d.uex("at");a.pec=a.ec},1E4)}};l.skipTrace=1;h.skipTrace=1;h.isStub=1;d.ueLogError=h;d.ue_err=a;e.onerror=l})(ue_csm,window);
+
+
+var ue_id = 'CPT6D7TDQK97JBTMH3AJ',
+    ue_url = '/uedata',
+    ue_navtiming = 1,
+    ue_mid = 'A1EVAM02EL8SFB',
+    ue_sid = '141-2764260-6912733',
+    ue_sn = 'www.imdb.com',
+    ue_furl = 'fls-na.amazon.com',
+    ue_surl = 'https://unagi-na.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
+    ue_fcsn = 1,
+    ue_urt = 3,
+    ue_rpl_ns = 'cel-rpl',
+    ue_ddq = 1,
+    ue_fpf = '//fls-na.amazon.com/1/batch/1/OP/A1EVAM02EL8SFB:141-2764260-6912733:CPT6D7TDQK97JBTMH3AJ$uedata=s:',
+    ue_rsc = 0,
+
+    ue_swi = 1;
+function ue_viz(){(function(c,e,a){function k(b){if(c.ue.viz.length<p&&!l){var a=b.type;b=b.originalEvent;/^focus./.test(a)&&b&&(b.toElement||b.fromElement||b.relatedTarget)||(a=e[m]||("blur"==a||"focusout"==a?"hidden":"visible"),c.ue.viz.push(a+":"+(+new Date-c.ue.t0)),"visible"==a&&(ue.isl&&uex("at"),l=1))}}for(var l=0,f,g,m,n=["","webkit","o","ms","moz"],d=0,p=20,h=0;h<n.length&&!d;h++)if(a=n[h],f=(a?a+"H":"h")+"idden",d="boolean"==typeof e[f])g=a+"visibilitychange",m=(a?a+"V":"v")+"isibilityState";
+k({});d&&e.addEventListener(g,k,0);c.ue&&d&&(c.ue.pageViz={event:g,propHid:f})})(ue_csm,document,window)};
+
+(function(a,g,x){function z(a){return a&&a.replace&&a.replace(/^\s+|\s+$/g,"")}function q(a){return"undefined"===typeof a}function J(e){if(a.ue_fpf&&g.encodeURIComponent&&e){var b=new Image;e=""+a.ue_fpf+g.encodeURIComponent(e)+":"+(+new Date-a.ue_t0);a.ue.iel.push(b);b.src=e}}function D(e){if(e&&0<e.length){var b=new Image;a.ue.iel.push(b);b.src=e}}function t(e,b,c,l){var g=l||+new Date,h;a.ueam&&a.ueam(b,e,l);if(b||q(c)){if(e)for(h in l=b?f("t",b)||f("t",b,{}):a.ue.t,l[e]=g,c)c.hasOwnProperty(h)&&
+f(h,b,c[h]);return g}}function f(e,b,c){var l=a.ue,f=b&&b!=l.id?l.sc[b]:l;f||(f=l.sc[b]={});"id"==e&&c&&(l.cfa2=1);return f[e]=c||f[e]}function A(e,b,c,f,g){c="on"+c;var h=b[c];"function"===typeof h?e&&(a.ue.h[e]=h):h=function(){};b[c]=g?function(a){f(a);h(a)}:function(a){h(a);f(a)};b[c]&&(b[c].isUeh=1)}function E(e,b,c){function l(b,c){var d=[b],L=0,g={},l,h;c?(d.push("m=1"),g[c]=1):g=a.ue.sc;for(h in g)if(g.hasOwnProperty(h)){var k=f("wb",h),m=f("t",h)||{},p=f("t0",h)||a.ue.t0,n;if(c||2==k){k=k?
+L++:"";d.push("sc"+k+"="+h);for(n in m)3>=n.length&&!q(m[n])&&null!==m[n]&&d.push(n+k+"="+(m[n]-p));d.push("t"+k+"="+m[e]);if(f("ctb",h)||f("wb",h))l=1}}!B&&l&&d.push("ctb=1");return d.join("&")}function K(b,c){if(a.ue.b){var e=a.ue.b;a.ue.b="";h(e,b,c,1)}}function h(b,c,e,d){if(b){var f=!d||!a.ue.log,l=a.ue_err,h;if(f&&(D(b),C&&"ul"===c&&r))try{r[F+a.ue.oid]=b}catch(k){}M?J(b):a.ue.log&&(h=g.chrome&&"ul"==c,a.ue.log(b,"uedata",a.ue_svi?{n:1,img:!d&&h?1:0}:{n:1}),a.ue.ielf.push(b));l&&!l.ts&&l.startTimer();
+K(c,e);C&&f&&"ld"===c&&N(F,function(a){a&&a.length&&(a+="&csmtags=was-recoverered");D(a)})}}function v(b){if(!ue.collected){var c=b.timing,e=b.navigation,d=ue.t;c&&(d.na_=c.navigationStart,d.ul_=c.unloadEventStart,d._ul=c.unloadEventEnd,d.rd_=c.redirectStart,d._rd=c.redirectEnd,d.fe_=c.fetchStart,d.lk_=c.domainLookupStart,d._lk=c.domainLookupEnd,d.co_=c.connectStart,d._co=c.connectEnd,d.sc_=c.secureConnectionStart,d.rq_=c.requestStart,d.rs_=c.responseStart,d._rs=c.responseEnd,d.dl_=c.domLoading,d.di_=
+c.domInteractive,d.de_=c.domContentLoadedEventStart,d._de=c.domContentLoadedEventEnd,d._dc=c.domComplete,d.ld_=c.loadEventStart,d._ld=c.loadEventEnd,c=d.na_,b="function"!==typeof b.now||q(c)?0:new Date(c+b.now())-new Date,d.ntd=b+a.ue.t0);e&&(d.ty=e.type+a.ue.t0,d.rc=e.redirectCount+a.ue.t0);ue.collected=1}}function s(b){var c=n&&n.navigation?n.navigation.type:y,d=c&&2!=c,e=a.ue.bfini;a.ue.cfa2||(e&&1<e&&(b+="&bfform=1",d||(a.ue.isBFT=e-1)),2==c&&(b+="&bfnt=1",a.ue.isBFT=a.ue.isBFT||1),a.ue.ssw&&
+a.ue.isBFT&&(q(a.ue.isNRBF)&&(c=a.ue.ssw(a.ue.oid),c.e||q(c.val)||(a.ue.isNRBF=1<c.val?0:1)),q(a.ue.isNRBF)||(b+="&nrbf="+a.ue.isNRBF)),a.ue.isBFT&&!a.ue.isNRBF&&(b+="&bft="+a.ue.isBFT));return b}if(b||q(c)){for(var m in c)c.hasOwnProperty(m)&&f(m,b,c[m]);t("pc",b,c);m=f("id",b)||a.ue.id;var d=a.ue.url+"?"+e+"&v="+a.ue.v+"&id="+m,B=f("ctb",b)||f("wb",b),n=g.performance||g.webkitPerformance,k,p;B&&(d+="&ctb="+B);1<a.ueinit&&(d+="&ic="+a.ueinit);!a.ue._fi||"at"!=e||b&&b!=m||(d+=a.ue._fi());if(!("ld"!=
+e&&"ul"!=e||b&&b!=m)){if("ld"==e){try{g.onbeforeunload&&g.onbeforeunload.isUeh&&(g.onbeforeunload=null)}catch(A){}if(g.chrome)for(p=0;p<ue.ulh.length;p++)G("beforeunload",ue.ulh[p]);(p=x.ue_backdetect)&&p.ue_back&&p.ue_back.value++;a._uess&&(k=a._uess());a.ue.isl=1}ue._bf&&(d+="&bf="+ue._bf());a.ue_navtiming&&n&&n.timing&&(f("ctb",m,"1"),1==a.ue_navtiming&&t("tc",y,y,n.timing.navigationStart));n&&v(n);a.ue.t.hob=a.ue_hob;a.ue.t.hoe=a.ue_hoe;a.ue.ifr&&(d+="&ifr=1")}t(e,b,c);c="ld"==e&&b&&f("wb",b);
+var w;c||b&&b!==m||O(b);c||m==a.ue.oid||P((f("t",b)||{}).tc||+f("t0",b),+f("t0",b));a.ue_mbl&&a.ue_mbl.cnt&&!c&&(d+=a.ue_mbl.cnt());c?f("wb",b,2):"ld"==e&&(u.lid=z(m));for(w in a.ue.sc)if(1==f("wb",w))break;if(c){if(a.ue.s)return;d=l(d,null)}else p=l(d,null),p!=d&&(p=s(p),a.ue.b=p),k&&(d+=k),d=l(d,b||a.ue.id);d=s(d);if(a.ue.b||c)for(w in a.ue.sc)2==f("wb",w)&&delete a.ue.sc[w];k=0;ue._rt&&(d+="&rt="+ue._rt());c||(a.ue.s=0,(k=a.ue_err)&&0<k.ec&&k.pec<k.ec&&(k.pec=k.ec,d+="&ec="+k.ec+"&ecf="+k.ecf),
+k=f("ctb",b),f("t",b,{}));d&&a.ue.tag&&0<a.ue.tag().length&&(d+="&csmtags="+a.ue.tag().join("|"),a.ue.tag=a.ue.tagC());d&&a.ue.viz&&0<a.ue.viz.length&&(d+="&viz="+a.ue.viz.join("|"),a.ue.viz=[]);d&&!q(a.ue_pty)&&(d+="&pty="+a.ue_pty+"&spty="+a.ue_spty+"&pti="+a.ue_pti);d&&a.ue.tabid&&(d+="&tid="+a.ue.tabid);d&&a.ue.aftb&&(d+="&aftb=1");d&&a.ue.sbf&&(d+="&sbf=1");!a.ue._ui||b&&b!=m||(d+=a.ue._ui());a.ue.a=d;h(d,e,k,c)}}function O(a){var b=g.ue_csm_markers||{},c;for(c in b)b.hasOwnProperty(c)&&t(c,
+a,y,b[c])}function v(e,b,c){c=c||g;a.ue_pel&&window.EventTarget&&window.EventTarget.prototype&&window.EventTarget.prototype.addEventListener?window.EventTarget.prototype.addEventListener.call(c,e,b,!!window.ue_clf):c.addEventListener?c.addEventListener(e,b,!!window.ue_clf):c.attachEvent&&c.attachEvent("on"+e,b)}function G(e,b,c){c=c||g;a.ue_pel&&window.EventTarget&&window.EventTarget.prototype&&window.EventTarget.prototype.removeEventListener?window.EventTarget.prototype.removeEventListener.call(c,
+e,b,!!window.ue_clf):c.removeEventListener?c.removeEventListener(e,b,!!window.ue_clf):c.detachEvent&&c.detachEvent("on"+e,b)}function H(){function e(){a.onUl()}function b(a){return function(){c[a]||(c[a]=1,E(a))}}var c=a.ue.r,f,q;a.onLd=b("ld");a.onLdEnd=b("ld");a.onUl=b("ul");f={stop:b("os")};g.chrome?(v("beforeunload",e),ue.ulh.push(e)):f[Q]=a.onUl;for(q in f)f.hasOwnProperty(q)&&A(0,g,q,f[q]);a.ue_viz&&ue_viz();R&&v("readystatechange",S,x);v("load",a.onLd);t("ue")}function S(){"complete"===x.readyState&&
+(T?setTimeout(I,0):I())}function I(){var e;if(!(e=ue.isl)&&(e=U))a:{e=x.images||[];for(var b=0;b<e.length;b++)if(!1===e[b].complete){e=!1;break a}e=!0}if(!e)a.onUl()}function P(e,b){a.ue_mbl&&a.ue_mbl.ajax&&a.ue_mbl.ajax(e,b);a.ue.tag("ajax-transition")}function N(a,b){if(r)try{for(var c=0;c<r.length;c++){var f=r.key(c);0===f.indexOf(a)&&(b(r[f]),r.removeItem(f))}}catch(g){}}a.ueinit=(a.ueinit||0)+1;var u={t0:g.aPageStart||a.ue_t0,id:a.ue_id,url:a.ue_url,rid:a.ue_id,a:"",b:"",h:{},r:{ld:0,oe:0,ul:0},
+s:1,t:{},sc:{},iel:[],ielf:[],fc_idx:{},viz:[],v:"0.200248.0",d:a.ue&&a.ue.d,log:a.ue&&a.ue.log,clog:a.ue&&a.ue.clog,onflush:a.ue&&a.ue.onflush,onunload:a.ue&&a.ue.onunload,stub:a.ue&&a.ue.stub,lr:a.ue&&a.ue.lr,exec:a.ue&&a.ue.exec,event:a.ue&&a.ue.event,onSushiUnload:a.ue&&a.ue.onSushiUnload,onSushiFlush:a.ue&&a.ue.onSushiFlush,ulh:[],cfa2:0},M=a.ue_fpf?1:0,C=1===a.ue_sspb,s;if(s=C)a:{try{s=g.sessionStorage;break a}catch(V){}s=void 0}var r=s,F="csmpb-",R=1===a.ue_rsc||3===a.ue_rsc,T=3===a.ue_rsc,
+U=1===a.ue_rsc,Q="beforeunload",y;u.oid=z(u.id);u.lid=z(u.id);a.ue=u;a.ue._t0=a.ue.t0;a.ue.tagC=function(){var a={};return function(b){b&&(a[b]=1);b=[];for(var c in a)a.hasOwnProperty(c)&&b.push(c);return b}};a.ue.tag=a.ue.tagC();a.ue.ifr=g.top!==g.self||g.frameElement?1:0;ue.attach=v;ue.detach=G;ue.reset=function(e,b){e&&(a.ue_cel&&a.ue_cel.reset(),a.ue.t0=+new Date,a.ue.rid=e,a.ue.id=e,a.ue.fc_idx={},a.ue.viz=[])};a.uei=H;a.ueh=A;a.ues=f;a.uet=t;a.uex=E;H()})(ue_csm,window,ue_csm.document);
+
+
+ue.stub(ue,"log");ue.stub(ue,"onunload");ue.stub(ue,"onflush");
+(function(b){var a=b.ue;a.cv={};a.cv.scopes={};a.count=function(c,b,d){var e={},f=a.cv;e.counter=c;e.value=b;e.t=a.d();d&&d.scope&&(f=a.cv.scopes[d.scope]=a.cv.scopes[d.scope]||{},e.scope=d.scope);if(void 0===b)return f[c];f[c]=b;c=0;d&&d.bf&&(c=1);a.clog&&0===c?a.clog(e,"csmcount",{bf:c}):a.log&&a.log(e,"csmcount",{c:1,bf:c})};a.count("baselineCounter2",1);a&&a.event&&(a.event({requestId:b.ue_id||"rid",server:b.ue_sn||"sn",obfuscatedMarketplaceId:b.ue_mid||"mid"},"csm","csm.CSMBaselineEvent.4"),
+a.count("nexusBaselineCounter",1,{bf:1}))})(ue_csm);
+
+
+
+var ue_hoe = +new Date();
+
+</script>
+
+<!-- 11cn --> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    
+    
+
+    
+    
+    
+
+    <meta name="apple-itunes-app" content="app-id=342792525, app-argument=imdb:///?src=mdot">
+            <style>
+                body#styleguide-v2 {
+                    background: no-repeat fixed center top #000;
+                }
+            </style>
+
+
+
+        <script type="text/javascript">var IMDbTimer={starttime: new Date().getTime(),pt:'java'};</script>
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadTitle", {wb: 1});
+    }
+</script>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_pre_title"] = new Date().getTime(); })(IMDbTimer);</script>
+        <title>Browse Movies and TV by Genre - IMDb</title>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_post_title"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    if (typeof uet == 'function') {
+      uet("be", "LoadTitle", {wb: 1});
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+      uex("ld", "LoadTitle", {wb: 1});
+    }
+</script>
+
+        <link rel="canonical" href="http://www.imdb.com/feature/genre/" />
+        <meta property="og:url" content="http://www.imdb.com/feature/genre/" />
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadIcons", {wb: 1});
+    }
+</script>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_pre_icon"] = new Date().getTime(); })(IMDbTimer);</script>
+        <link href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/safari-favicon-517611381._CB514892156_.svg" mask rel="icon" sizes="any">
+        <link rel="icon" type="image/ico" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/favicon-2165806970._CB514892157_.ico" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB522736561_.ico" />
+        <link href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-4151659188._CB514891867_.png" rel="apple-touch-icon"> 
+        <link href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-76x76-53536248._CB514891820_.png" rel="apple-touch-icon" sizes="76x76"> 
+        <link href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-120x120-2442878471._CB514893789_.png" rel="apple-touch-icon" sizes="120x120"> 
+        <link href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-152x152-1475823641._CB514891827_.png" rel="apple-touch-icon" sizes="152x152">            
+        <link rel="search" type="application/opensearchdescription+xml" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/imdbsearch-3349468880._CB514892150_.xml" title="IMDb" />
+  <script>(function(t){ (t.events = t.events || {})["csm_head_post_icon"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    if (typeof uet == 'function') {
+      uet("be", "LoadIcons", {wb: 1});
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+      uex("ld", "LoadIcons", {wb: 1});
+    }
+</script>
+        
+        <meta property="pageType" content="imdbfeature" />
+        <meta property="subpageType" content="section" />
+
+
+        <link rel='image_src' href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/logos/imdb_fb_logo-1730868325._CB514892123_.png">
+        <meta property='og:image' content="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/logos/imdb_fb_logo-1730868325._CB514892123_.png" />
+
+    <meta property='fb:app_id' content='115109575169727' />
+
+    <meta property='og:title' content="Browse Movies and TV by Genre" />
+    <meta property='og:site_name' content='IMDb' />
+    <meta name="title" content="Browse Movies and TV by Genre - IMDb" />
+        <meta name="description" content="Browse most popular movies and TV by genre" />
+        <meta property="og:description" content="Browse most popular movies and TV by genre" />
+        <meta name="keywords" content="movies,films,movie database,actors,actresses,directors,hollywood,stars,quotes" />
+        <meta name="request_id" content="CPT6D7TDQK97JBTMH3AJ" />
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadCSS", {wb: 1});
+    }
+</script>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
+<!-- h=ics-c42xl-1f-34d0a0f2.us-east-1 -->
+
+            <link rel="stylesheet" type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/css/collections/consumer-2-column-127274458._CB501929881_.css" />
+        <noscript>
+            <link rel="stylesheet" type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/css/wheel/nojs-2827156349._CB514892070_.css">
+        </noscript>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_post_css"] = new Date().getTime(); })(IMDbTimer);</script>
+<script>
+    if (typeof uet == 'function') {
+      uet("be", "LoadCSS", {wb: 1});
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+      uex("ld", "LoadCSS", {wb: 1});
+    }
+</script>
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadJS", {wb: 1});
+    }
+</script>
+  <script>(function(t){ (t.events = t.events || {})["csm_head_pre_ads"] = new Date().getTime(); })(IMDbTimer);</script>
+        <script>
+window.ads_js_start = new Date().getTime();
+var imdbads = imdbads || {}; imdbads.cmd = imdbads.cmd || [];
+</script>
+<!-- begin SRA -->
+<script>
+!function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){"use strict";a(2)},{2:2}],2:[function(a,b,c){"use strict";!function(){var a,b,c=function(a){return"[object Array]"===Object.prototype.toString.call(a)},d=function(a,b){for(var c=0;c<a.length;c++)c in a&&b.call(null,a[c],c)},e=[],f=!1,g=!1,h=function(){var a=[],b=[],c={};return d(e,function(e){var f="";d(e.dartsite.split("/"),function(b){""!==b&&(b in c||(c[b]=a.length,a.push(b)),f+="/"+c[b])}),b.push(f)}),{iu_parts:a,enc_prev_ius:b}},i=function(){var a=[];return d(e,function(b){var c=[];d(b.sizes,function(a){c.push(a.join("x"))}),a.push(c.join("|"))}),a},j=function(){var a=[];return d(e,function(b){a.push(k(b.targeting))}),a.join("|")},k=function(a,b){var c,d=[];for(var e in a){c=[];for(var f=0;f<a[e].length;f++)c.push(encodeURIComponent(a[e][f]));b?d.push(e+"="+encodeURIComponent(c.join(","))):d.push(e+"="+c.join(","))}return d.join("&")},l=function(){var a=+new Date;g||document.readyState&&"loaded"!==document.readyState||(g=!0,f&&imdbads.cmd.push(function(){for(var b=0;b<e.length;b++)generic.monitoring.record_metric(e[b].name+".fail",csm.duration(a))}))};window.tinygpt={define_slot:function(a,b,c,d){e.push({dartsite:a.replace(/\/$/,""),sizes:b,name:c,targeting:d})},set_targeting:function(b){a=b},callback:function(a){var c,d,f={},g=+new Date;try{for(var h=0;h<e.length;h++)c=e[h].dartsite,d=e[h].name,a[h][c]?f[d]=a[h][c]:window.console&&console.error&&console.error("Unable to correlate GPT response for "+d);imdbads.cmd.push(function(){for(var a=0;a<e.length;a++)ad_utils.slot_events.trigger(e[a].name,"request",{timestamp:b}),ad_utils.slot_events.trigger(e[a].name,"tagdeliver",{timestamp:g});ad_utils.gpt.handle_response(f)})}catch(i){window.console&&console.error&&console.error("Exception in GPT callback: "+i.message)}},send:function(){var d,g,m=[],n=function(a,b){c(b)&&(b=b.join(",")),b&&m.push(a+"="+encodeURIComponent(""+b))};if(0===e.length)return void tinygpt.callback({});n("gdfp_req","1"),n("correlator",Math.floor(4503599627370496*Math.random())),n("output","json_html"),n("callback","tinygpt.callback"),n("impl","fifs"),n("json_a","1");var o=h();n("iu_parts",o.iu_parts),n("enc_prev_ius",o.enc_prev_ius),n("prev_iu_szs",i()),n("prev_scp",j()),n("cust_params",k(a,!0)),d=document.createElement("script"),g=document.getElementsByTagName("script")[0],d.async=!0,d.type="text/javascript",d.src="http://pubads.g.doubleclick.net/gampad/ads?"+m.join("&"),d.id="tinygpt",d.onload=d.onerror=d.onreadystatechange=l,f=!0,g.parentNode.insertBefore(d,g),b=+new Date}}}()},{}]},{},[1]);</script>
+<!-- begin ads header -->
+<script src="https://ia.media-imdb.com/images/G/01/imdbads/js/collections/tarnhelm-3142432608._CB503292493_.js"></script>
+<script id="ads_doWithAds">
+doWithAds = function(inside, failureMessage){
+if ('consoleLog' in window &&
+'generic' in window &&
+'ad_utils' in window &&
+'custom' in window &&
+'monitoring' in generic &&
+'document_is_ready' in generic) {
+try{
+inside.call(this);
+}catch(e) {
+if ( window.ueLogError ) {
+if(typeof failureMessage !== 'undefined'){
+e.message = failureMessage;
+}
+e.attribution = "Advertising";
+e.logLevel = "ERROR";
+ueLogError(e);
+}
+if( (document.location.hash.match('debug=1')) &&
+(typeof failureMessage !== 'undefined') ){
+console.error(failureMessage);
+}
+}
+} else {
+if( (document.location.hash.match('debug=1')) &&
+(typeof failureMessage !== 'undefined') ){
+console.error(failureMessage);
+}
+}
+};
+</script><script id="ads_monitoring_setup">
+doWithAds(function(){
+generic.monitoring.set_forester_info("sponsor");
+generic.monitoring.set_twilight_info(
+"sponsor",
+"CZ",
+"5022a26d3a36bc99c679332cd4d23ea1ffe83f9e",
+"2018-03-20T10%3A32%3A59GMT",
+"https://s.media-imdb.com/twilight/?",
+"consumer");
+generic.monitoring.start_timing("page_load");
+generic.seconds_to_midnight = 73621;
+generic.days_to_midnight = 0.8520948886871338;
+},"Generic not defined, skipping monitoring setup.");
+</script>
+<script src="https://images-na.ssl-images-amazon.com/images/G/01/dacx/sf/DAsf-1.34_FX1._V275812351_.js"></script>
+<script id="ads_safeframe_setup">
+doWithAds(function(){
+if (typeof DAsf != 'undefined' && typeof DAsf.registerCustomMessageListener === 'function') {
+DAsf.registerCustomMessageListener('adFeedback', window.ad_utils.show_ad_feedback);
+DAsf.registerCustomMessageListener('sendMetrics', window.generic.monitoring.update_sf_slot_metrics);
+DAsf.registerCustomMessageListener('expand', window.ad_utils.expand_overlay);
+DAsf.registerCustomMessageListener('collapse', window.ad_utils.collapse_overlay);
+}
+},"ads js missing, skipping safeframe setup.");
+</script>
+<script id="ads_general_setup">
+doWithAds(function(){
+generic.monitoring.record_metric("ads_js_request_to_done", (new Date().getTime()) - window.ads_js_start);
+generic.send_csm_head_metrics && generic.send_csm_head_metrics();
+ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'top_ad':1, 'top_rhs':1 });
+custom.full_page.data_url = "https://ia.media-imdb.com/images/G/01/imdbads/js/graffiti_data-538221799._CB514936172_.js";
+consoleLog('advertising initialized','ads');
+},"ads js missing, skipping general setup.");
+var _gaq = _gaq || [];
+_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'f']);
+</script>
+<script>doWithAds(function() { ad_utils.ads_header.done(); });</script>
+<!-- end ads header -->
+        <script  type="text/javascript">
+            // ensures js doesn't die if ads service fails.  
+            // Note that we need to define the js here, since ad js is being rendered inline after this.
+            (function(f) {
+                // Fallback javascript, when the ad Service call fails.  
+                
+                if((window.csm == null || window.generic == null || window.consoleLog == null)) {
+                    if (window.console && console.log) {
+                        console.log("one or more of window.csm, window.generic or window.consoleLog has been stubbed...");
+                    }
+                }
+                
+                window.csm = window.csm || { measure:f, record:f, duration:f, listen:f, metrics:{} };
+                window.generic = window.generic || { monitoring: { start_timing: f, stop_timing: f } };
+                window.consoleLog = window.consoleLog || f;
+            })(function() {});
+        </script>
+  <script>
+    if ('csm' in window) {
+      csm.measure('csm_head_delivery_finished');
+    }
+  </script>
+<script>
+    if (typeof uet == 'function') {
+      uet("be", "LoadJS", {wb: 1});
+    }
+</script>
+<script>
+    if (typeof uex == 'function') {
+      uex("ld", "LoadJS", {wb: 1});
+    }
+</script>
+        <script type='text/javascript'>
+(function(e,c){function h(b,a){f.push([b,a])}function g(b,a){if(b){var c=e.head||e.getElementsByTagName("head")[0]||e.documentElement,d=e.createElement("script");d.async="async";d.src=b;d.setAttribute("crossorigin","anonymous");a&&a.onerror&&(d.onerror=a.onerror);a&&a.onload&&(d.onload=a.onload);c.insertBefore(d,c.firstChild)}}function k(){ue.uels=g;for(var b=0;b<f.length;b++){var a=f[b];g(a[0],a[1])}ue.deffered=1}var f=[];c.ue&&(ue.uels=h,c.ue.attach&&c.ue.attach("load",k))})(document,window);
+
+(function(a){var b=a.alert;window.alert=function(){a.ueLogError&&a.ueLogError({message:"[CSM] Alert invocation detected with argument: "+arguments[0],logLevel:"WARN"});Function.prototype.apply.apply(b,[a,arguments||[]])}})(window);
+
+(function(k,l,g){function m(a){c||(c=b[a.type].id,"undefined"===typeof a.clientX?(e=a.pageX,f=a.pageY):(e=a.clientX,f=a.clientY),2!=c||h&&(h!=e||n!=f)?(r(),d.isl&&l.setTimeout(function(){p("at",d.id)},0)):(h=e,n=f,c=0))}function r(){for(var a in b)b.hasOwnProperty(a)&&d.detach(a,m,b[a].parent)}function s(){for(var a in b)b.hasOwnProperty(a)&&d.attach(a,m,b[a].parent)}function t(){var a="";!q&&c&&(q=1,a+="&ui="+c);return a}var d=k.ue,p=k.uex,q=0,c=0,h,n,e,f,b={click:{id:1,parent:g},mousemove:{id:2,
+parent:g},scroll:{id:3,parent:l},keydown:{id:4,parent:g}};d&&p&&(s(),d._ui=t)})(ue_csm,window,document);
+
+
+
+    if (window.ue && window.ue.uels) {
+                    ue.uels("https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/ClientSideMetricsAUIJavascript-b21a317ae34c459d293e8dce1fe4e672f4f85562._V2_.js");
+    }
+
+(function(k,c){function l(a,b){return a.filter(function(a){return a.initiatorType==b})}function f(a,c){if(b.t[a]){var g=b.t[a]-b._t0,e=c.filter(function(a){return 0!==a.responseEnd&&m(a)<g}),f=l(e,"script"),h=l(e,"link"),k=l(e,"img"),n=e.map(function(a){return a.name.split("/")[2]}).filter(function(a,b,c){return a&&c.lastIndexOf(a)==b}),q=e.filter(function(a){return a.duration<p}),s=g-Math.max.apply(null,e.map(m))<r|0;"af"==a&&(b._afjs=f.length);return a+":"+[e[d],f[d],h[d],k[d],n[d],q[d],s].join("-")}}
+function m(a){return a.responseEnd-(b._t0-c.timing.navigationStart)}function n(){var a=c[h]("resource"),d=f("cf",a),g=f("af",a),a=f("ld",a);delete b._rt;b._ld=b.t.ld-b._t0;b._art&&b._art();return[d,g,a].join("_")}var p=20,r=50,d="length",b=k.ue,h="getEntriesByType";b._rre=m;b._rt=c&&c.timing&&c[h]&&n})(ue_csm,window.performance);
+
+
+(function(m,d){function c(b){b="";var c=a.isBFT?"b":"s",d=""+a.oid,f=""+a.lid,g=d;d!=f&&20==f.length&&(c+="a",g+="-"+f);a.tabid&&(b=a.tabid+"+");b+=c+"-"+g;b!=e&&100>b.length&&(e=b,a.cookie?a.cookie.updateCsmHit(n,b+("|"+ +new Date),h):document.cookie="csm-hit="+b+("|"+ +new Date)+p+"; path=/")}function q(){e=0}function k(b){!0===d[a.pageViz.propHid]?e=0:!1===d[a.pageViz.propHid]&&c({type:"visible"})}var h=new Date(+new Date+6048E5),p="; expires="+h.toGMTString(),n="tb",e,a=m.ue||{},l=a.pageViz&&
+a.pageViz.event&&a.pageViz.propHid;a.attach&&(a.attach("click",c),a.attach("keyup",c),l||(a.attach("focus",c),a.attach("blur",q)),l&&(a.attach(a.pageViz.event,k,d),k({})));a.aftb=1})(ue_csm,document);
+
+
+ue_csm.ue.stub(ue,"impression");
+
+
+(function(k,d,h){function f(a,c,b){a&&a.indexOf&&0===a.indexOf("http")&&0!==a.indexOf("https")&&l(s,c,a,b)}function g(a,c,b){a&&a.indexOf&&(location.href.split("#")[0]!=a&&null!==a&&"undefined"!==typeof a||l(t,c,a,b))}function l(a,c,b,e){m[b]||(e=u&&e?n(e):"N/A",d.ueLogError&&d.ueLogError({message:a+c+" : "+b,logLevel:v,stack:"N/A"},{attribution:e}),m[b]=1,p++)}function e(a,c){if(a&&c)for(var b=0;b<a.length;b++)try{c(a[b])}catch(d){}}function q(){return d.performance&&d.performance.getEntriesByType?
+d.performance.getEntriesByType("resource"):[]}function n(a){if(a.id)return"//*[@id='"+a.id+"']";var c;c=1;var b;for(b=a.previousSibling;b;b=b.previousSibling)b.nodeName==a.nodeName&&(c+=1);b=a.nodeName;1!=c&&(b+="["+c+"]");a.parentNode&&(b=n(a.parentNode)+"/"+b);return b}function w(){var a=h.images;a&&a.length&&e(a,function(a){var b=a.getAttribute("src");f(b,"img",a);g(b,"img",a)})}function x(){var a=h.scripts;a&&a.length&&e(a,function(a){var b=a.getAttribute("src");f(b,"script",a);g(b,"script",a)})}
+function y(){var a=h.styleSheets;a&&a.length&&e(a,function(a){if(a=a.ownerNode){var b=a.getAttribute("href");f(b,"style",a);g(b,"style",a)}})}function z(){if(A){var a=q();e(a,function(a){f(a.name,a.initiatorType)})}}function B(){e(q(),function(a){g(a.name,a.initiatorType)})}function r(){var a;a=d.location&&d.location.protocol?d.location.protocol:void 0;"https:"==a&&(z(),w(),x(),y(),B(),p<C&&setTimeout(r,D))}var s="[CSM] Insecure content detected ",t="[CSM] Ajax request to same page detected ",v="WARN",
+m={},p=0,D=k.ue_nsip||1E3,C=5,A=1==k.ue_urt,u=!0;ue_csm.ue_disableNonSecure||(d.performance&&d.performance.setResourceTimingBufferSize&&d.performance.setResourceTimingBufferSize(300),r())})(ue_csm,window,document);
+
+
+
+if(window.ue&&uet) { uet('bb'); }
+
+</script>
+        </head>
+    <body id="styleguide-v2" class="fixed">
+            <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-na.amazon.com/1/batch/1/OP/A1EVAM02EL8SFB:141-2764260-6912733:CPT6D7TDQK97JBTMH3AJ$uedata=s:%2Fuedata%3Fstaticb%26id%3DCPT6D7TDQK97JBTMH3AJ:0' alt="" onload="window.ue_sbl && window.ue_sbl();"/>
+
+
+<script>
+    if (typeof uet == 'function') {
+      uet("bb");
+    }
+</script>
+  <script>
+    if ('csm' in window) {
+      csm.measure('csm_body_delivery_started');
+    }
+  </script>
+        <div id="wrapper">
+            <div id="root" class="redesign">
+<script>
+    if (typeof uet == 'function') {
+      uet("ns");
+    }
+</script>
+<div id="nb20" class="navbarSprite">
+<div id="supertab">	
+	
+<!-- begin TOP_AD -->
+<div id="top_ad_wrapper" class="cornerstone_slot">
+<script type="text/javascript">
+doWithAds(function(){
+if ('cornerstone_slot' != 'injected_slot') {
+ad_utils.register_ad('top_ad');
+}
+});
+</script>
+<iframe allowtransparency="true" class="yesScript" data-blank-serverside frameborder="0" id="top_ad" marginwidth="0" marginheight="0" name="top_ad" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="85" width="0" height="85" ></iframe> </div>
+<div id="top_ad_reflow_helper"></div>
+<script id="top_ad_rendering">
+doWithAds(function(){
+if ('cornerstone_slot' == 'injected_slot') {
+ad_utils.inject_ad.register('top_ad');
+} else {
+ad_utils.gpt.render_ad('top_ad');
+}
+}, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+</script>
+<!-- End TOP_AD -->
+	
+</div>
+  <div id="navbar" class="navbarSprite">
+<noscript>
+  <link rel="stylesheet" type="text/css" href="https://images-na.ssl-images-amazon.com/images/G/01/imdb/css/site/consumer-navbar-no-js-3652782989._CB514893318_.css" />
+</noscript>
+<span id="home_img_holder">
+<a href="/?ref_=nv_home"
+title="Home" class="navbarSprite" id="home_img" ></a>  <span class="alt_logo">
+    <a href="/?ref_=nv_home"
+title="Home" >IMDb</a>
+  </span>
+</span>
+<form
+ method="get"
+ action="/find"
+ class="nav-searchbar-inner"
+ id="navbar-form"
+
+>
+  <div id="nb_search">
+    <noscript><div id="more_if_no_javascript"><a href="/search/">More</a></div></noscript>
+    <button id="navbar-submit-button" class="primary btn" type="submit"><div class="magnifyingglass navbarSprite"></div></button>
+    <input type="hidden" name="ref_" value="nv_sr_fn" />
+    <input type="text" autocomplete="off" value="" name="q" id="navbar-query" placeholder="Find Movies, TV shows, Celebrities and more...">
+    <div class="quicksearch_dropdown_wrapper">
+      <select name="s" id="quicksearch" class="quicksearch_dropdown navbarSprite hidden">
+        <option value="all" >All</option>
+        <option value="tt" >Titles</option>
+        <option value="ep" >TV Episodes</option>
+        <option value="nm" >Names</option>
+        <option value="co" >Companies</option>
+        <option value="kw" >Keywords</option>
+      </select>
+    </div>
+    <div id="navbar-suggestionsearch"></div>
+  </div>
+</form>
+<div id="megaMenu">
+    <ul id="consumer_main_nav" class="main_nav">
+        <li class="spacer"></li>
+        <li class="css_nav_item" id="navTitleMenu">
+            <p class="navCategory">
+                <a href="/movies-in-theaters/?ref_=nv_tp_inth_1"
+>Movies</a>,
+                <a href="/chart/toptv/?ref_=nv_tp_tv250_2"
+>TV</a><br />
+                & <a href="/showtimes/?ref_=nv_tp_sh_3"
+>Showtimes</a></p>
+            <span class="downArrow"></span>
+            <div id="navMenu1" class="sub_nav">
+                    <div id="titleMenuImage" style="background: url('https://ia.media-imdb.com/images/M/MV5BMjE1MTE2MzQ2NV5BMl5BanBnXkFtZTgwNTc5Nzk3MTE@._UY315_CR190,0,410,315_HC_BR25_CT35_.jpg')">
+                        <a title="                            Divoké historky
+, #183 on IMDb Top Rated Movies"
+                            href="/title/tt3011894/?ref_=nv_mv_dflt_1" class="fallback">
+                        </a>
+                        <div class="overlay">
+                            <p>
+                                <a href="/title/tt3011894/?ref_=nv_mv_dflt_2" id="titleMenuImageClick">
+                                    <strong>                            Divoké historky
+</strong> (2014)
+                                </a>
+                                <br />
+                                <a href="/chart/top?ref_=nv_mv_dflt_3" id="titleMenuImageSecondaryClick">
+                                    #<strong>183</strong> on IMDb Top Rated Movies
+                                </a> &raquo;
+                            </p>
+                        </div>
+                    </div>
+                <div class="subNavListContainer">
+                    <h5>MOVIES</h5>
+                    <ul>
+                        <li><a href="/movies-in-theaters/?ref_=nv_mv_inth_1"
+>In Theaters</a></li>
+                        <li><a href="/showtimes/?ref_=nv_mv_sh_2"
+>Showtimes & Tickets</a></li>
+                        <li><a href="/trailers/?ref_=nv_mv_tr_3"
+>Latest Trailers</a></li>
+                        <li><a href="/movies-coming-soon/?ref_=nv_mv_cs_4"
+>Coming Soon</a></li>
+                        <li><a href="/calendar/?ref_=nv_mv_cal_5"
+>Release Calendar</a></li>
+                        <li><a href="/chart/top?ref_=nv_mv_250_6"
+>Top Rated Movies</a></li>
+                        <li><a href="/india/top-rated-indian-movies?ref_=nv_mv_250_in_7"
+>Top Rated Indian Movies</a></li>
+                        <li><a href="/chart/moviemeter?ref_=nv_mv_mpm_8"
+>Most Popular Movies</a></li>
+                    </ul>
+                    <h5>CHARTS & TRENDS</h5>
+                    <ul>
+                        <li><a href="/chart/?ref_=nv_ch_cht_1"
+>Box Office</a></li>
+                        <li><a href="/search/title?count=100&groups=oscar_best_picture_winners&sort=year,desc&ref_=nv_ch_osc_2"
+>Oscar Winners</a></li>
+                        <li><a href="/genre/?ref_=nv_ch_gr_3"
+>Most Popular by Genre</a></li>
+                    </ul>
+                </div>
+                <div class="subNavListContainer">
+                    <h5>TV & VIDEO</h5>
+                    <ul>
+                        <li><a href="/tv/?ref_=nv_tvv_tv_1"
+>IMDb TV</a></li>
+                        <li><a href="/chart/toptv/?ref_=nv_tvv_250_3"
+>Top Rated TV Shows</a></li>
+                        <li><a href="/chart/tvmeter?ref_=nv_tvv_mptv_4"
+>Most Popular TV Shows</a></li>
+                        <li><a href="/sections/dvd/?ref_=nv_tvv_dvd_5"
+>DVD & Blu-Ray</a></li>
+                    </ul>
+                    <h5>SPECIAL FEATURES</h5>
+                    <ul>
+                        <li><a href="/amazon-originals/?ref_=nv_sf_ams_1"
+>Amazon Originals</a></li>
+                        <li><a href="/streaming/?ref_=nv_sf_st_2"
+>Streaming</a></li>
+                        <li><a href="/star-wars/?ref_=nv_sf_stw_3"
+>Star Wars</a></li>
+                        <li><a href="/imdbpicks/?ref_=nv_sf_picks_4"
+>IMDb Picks</a></li>
+                        <li><a href="/superheroes/?ref_=nv_sf_supr_5"
+>Superheroes</a></li>
+                        <li><a href="/sxsw/?ref_=nv_sf_sxsw_6"
+>SXSW</a></li>
+                        <li><a href="/show/?ref_=nv_sf_is_7"
+>"The IMDb Show"</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="spacer"></li>
+        <li class="css_nav_item" id="navNameMenu">
+            <p class="navCategory">
+                <a href="/search/name?gender=male,female&ref_=nv_tp_cel_1"
+>Celebs</a>,
+                <a href="/awards-central/?ref_=nv_tp_awrd_2"
+>Events</a><br />
+                & <a href="/gallery/rg784964352?ref_=nv_tp_ph_3"
+>Photos</a></p>
+            <span class="downArrow"></span>
+            <div id="navMenu2" class="sub_nav">
+                    <div id="nameMenuImage" style="background: url('https://ia.media-imdb.com/images/M/MV5BMTQ1NzU2NTkxNl5BMl5BanBnXkFtZTcwNzMxOTUxOQ@@._V1._SX250_CR0,0,250,315_.jpg')">
+                        <a title="Jennifer Lawrence, #10 on STARmeter"
+                            href="/name/nm2225369/?ref_=nv_cel_dflt_1" class="fallback">
+                        </a>
+                        <div class="overlay">
+                            <p>
+                                <a href="/name/nm2225369/?ref_=nv_cel_dflt_2" id="nameAdClick">
+                                    <strong>Jennifer Lawrence</strong>
+                                </a> &raquo;
+                                <br />
+                                #<strong>10</strong> on STARmeter
+                            </p>
+                        </div>
+                    </div>
+                <div class="subNavListContainer">
+                    <h5>CELEBS</h5>
+                    <ul>
+                            <li><a href="/search/name?birth_monthday=03-20&refine=birth_monthday&ref_=nv_cel_brn_1"
+>Born Today</a></li>
+                        <li><a href="/news/celebrity?ref_=nv_cel_nw_2"
+>Celebrity News</a></li>
+                        <li><a href="/search/name?gender=male,female&ref_=nv_cel_m_3"
+>Most Popular Celebs</a></li>
+                    </ul>
+                    <h5>PHOTOS</h5>
+                    <ul>
+                        <li><a href="/gallery/rg1859820288?ref_=nv_ph_ls_1"
+>Latest Stills</a></li>
+                        <li><a href="/gallery/rg1624939264?ref_=nv_ph_lp_2"
+>Latest Posters</a></li>
+                        <li><a href="/gallery/rg1641716480?ref_=nv_ph_lv_3"
+>Photos We Love</a></li>
+                    </ul>
+                </div>
+                <div class="subNavListContainer">
+                    <h5>EVENTS</h5>
+                    <ul>
+                        <li><a href="/awards-central/?ref_=nv_ev_awrd_1"
+>Awards Central</a></li>
+                        <li><a href="/festival-central/?ref_=nv_ev_fc_2"
+>Festival Central</a></li>
+                        <li><a href="/oscars/?ref_=nv_ev_acd_3"
+>Oscars</a></li>
+                        <li><a href="/golden-globes/?ref_=nv_ev_gg_4"
+>Golden Globes</a></li>
+                        <li><a href="/sundance/?ref_=nv_ev_sun_5"
+>Sundance</a></li>
+                        <li><a href="/cannes/?ref_=nv_ev_can_6"
+>Cannes</a></li>
+                        <li><a href="/comic-con/?ref_=nv_ev_comic_7"
+>Comic-Con</a></li>
+                        <li><a href="/emmys/?ref_=nv_ev_rte_8"
+>Emmy Awards</a></li>
+                        <li><a href="/venice/?ref_=nv_ev_venice_9"
+>Venice Film Festival</a></li>
+                        <li><a href="/toronto/?ref_=nv_ev_tor_10"
+>Toronto Film Festival</a></li>
+                        <li><a href="/festival-central/tribeca?ref_=nv_ev_trb_11"
+>Tribeca</a></li>
+                        <li><a href="/sxsw/?ref_=nv_ev_sxsw_12"
+>SXSW</a></li>
+                        <li><a href="/event/all/?ref_=nv_ev_all_13"
+>All Events</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="spacer"></li>
+        <li class="css_nav_item" id="navNewsMenu">
+            <p class="navCategory">
+                <a href="/news/top?ref_=nv_tp_nw_1"
+>News</a> &<br />
+                <a href="/czone/?ref_=nv_cm_cz_2"
+>Community</a>
+            </p>
+            <span class="downArrow"></span>
+            <div id="navMenu3" class="sub_nav">
+                <div id="latestHeadlines">
+                    <div class="subNavListContainer">
+                        <h5>LATEST HEADLINES</h5>
+    <ul class="ipl-simple-list">
+            <li class="news_item" itemprop="headline">
+<a href="/news/ni61965024?ref_=nv_nw_tn_1"
+> Elisabeth Moss Joins Tiffany Haddish, Melissa McCarthy in Mob Drama ‘The Kitchen’
+</a><br />
+                <small>
+                <span itemprop="datePublished">14 hours ago</span>
+                <span>|</span>
+                <span itemprop="provider">Variety - Film News</span>
+                </small>
+            </li>
+            <li class="news_item" itemprop="headline">
+<a href="/news/ni61965227?ref_=nv_nw_tn_2"
+> ‘Stranger Things’ Stars Land Season 3 Pay Raises
+</a><br />
+                <small>
+                <span itemprop="datePublished">12 hours ago</span>
+                <span>|</span>
+                <span itemprop="provider">Variety - TV News</span>
+                </small>
+            </li>
+            <li class="news_item" itemprop="headline">
+<a href="/news/ni61965316?ref_=nv_nw_tn_3"
+> Jenna Dewan Tatum to Star in Fox’s ‘Mixtape’ Pilot
+</a><br />
+                <small>
+                <span itemprop="datePublished">10 hours ago</span>
+                <span>|</span>
+                <span itemprop="provider">The Wrap</span>
+                </small>
+            </li>
+    </ul>
+                    </div>
+                </div>
+                <div class="subNavListContainer">
+                    <h5>NEWS</h5>
+                    <ul>
+                        <li><a href="/news/top?ref_=nv_nw_tp_1"
+>Top News</a></li>
+                        <li><a href="/news/movie?ref_=nv_nw_mv_2"
+>Movie News</a></li>
+                        <li><a href="/news/tv?ref_=nv_nw_tv_3"
+>TV News</a></li>
+                        <li><a href="/news/celebrity?ref_=nv_nw_cel_4"
+>Celebrity News</a></li>
+                        <li><a href="/news/indie?ref_=nv_nw_ind_5"
+>Indie News</a></li>
+                    </ul>
+                    <h5>COMMUNITY</h5>
+                    <ul>
+                        <li><a href="/czone/?ref_=nv_cm_cz_2"
+>Contributor Zone</a></li>
+                        <li><a href="/poll/?ref_=nv_cm_pl_3"
+>Polls</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+        <li class="spacer"></li>
+        <li class="css_nav_item" id="navWatchlistMenu">
+<p class="navCategory singleLine watchlist">
+    <a href="/list/watchlist?ref_=nv_wl_all_0"
+>Watchlist</a>
+</p>
+<span class="downArrow"></span>
+<div id="navMenu4" class="sub_nav">
+    <h5>
+            YOUR WATCHLIST
+    </h5>
+    <ul id="navWatchlist">
+    </ul>
+    <script>
+    if (!('imdb' in window)) { window.imdb = {}; }
+    window.imdb.watchlistTeaserData = [
+                {
+                        href : "/list/watchlist",
+                src : "https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/watchlist_slot1_logged_out-1670046337._CB514893327_.jpg"
+                },
+                {
+                    href : "/search/title?count=100&title_type=feature,tv_series",
+                src : "https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/watchlist_slot2_popular-4090757197._CB514891970_.jpg"
+                },
+                {
+                    href : "/chart/top",
+                src : "https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/watchlist_slot3_top250-575799966._CB514893316_.jpg"
+                }
+    ];
+    </script>
+</div>
+        </li>
+        <li class="spacer"></li>
+    </ul>
+</div>
+<div id="nb_extra">
+    <ul id="nb_extra_nav" class="main_nav">
+        <li class="css_nav_item" id="navProMenu">
+            <p class="navCategory">
+<a href="https://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+> <img alt="IMDbPro Menu" src="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/imdbpro_logo_nb-3000473826._CB514891971_.png" />
+</a>            </p>
+            <span class="downArrow"></span>
+            <div id="navMenuPro" class="imdb-pro-ad sub_nav">
+<a href="https://pro.imdb.com/signup/index.html?rf=cons_nb_hm&ref_=cons_nb_hm"
+class="imdp-pro-ad__link" > <div id="proAd" class="imdb-pro-ad__image">
+<img alt="Go to IMDbPro" height="180" width="174"
+src="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-4091932618._CB514893321_.png"
+srcset="https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/imdbpro_menu_user-4091932618._CB514893321_.png 1x,
+https://images-na.ssl-images-amazon.com/images/G/01/imdb/images/navbar/imdbpro_menu_user_2x-2074318947._CB514891973_.png 2x" />
+</div>
+<section class="imdb-pro-ad__content">
+<div class="imdb-pro-ad__title">The leading information resource for the entertainment industry</div>
+<p class="imdb-pro-ad__line">Find industry contacts &amp; talent representation</p>
+<p class="imdb-pro-ad__line">Manage your photos, credits, &amp; more</p>
+<p class="imdb-pro-ad__line">Showcase yourself on IMDb &amp; Amazon</p>
+<span class="imdb-pro-ad__button">Go to IMDbPro</span>
+</section>
+</a>            </div>
+        </li>
+        <li class="spacer"><span class="ghost">|</span></li>
+        <li>
+            <a href="https://help.imdb.com/imdb?ref_=cons_nb_hlp"
+>Help</a>
+        </li>
+        <li class="social">
+
+    <a href="/offsite/?page-action=fol_fb&token=BCYkPb4y4ft75MFI3FYHW8E6HVz22W4iyDJkEmt_D23qE5ZD7rINO0-7J1AgicyfFSNRC6E7TED4%0D%0A73DGZBYMikyATJmydoKBOxn7p3wbtji6zM1tWC5HRYoYK8HBudmiHRZtBTffjuV9UGAS38B2RSWr%0D%0A9LD9zM4iPSlE2aqmDtq0uHxNe0zQmFTo5UuE9nlkObg7EC_Pv76_mgdjBn1CD4XsJA%0D%0A&ref_=ft_nv_fol_fb"
+title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_tw&token=BCYjxaTjV9W0AdILbWnfOYgfXX8N4qMdQrDbkXisMs-ibVz_iWpuhu25ZMP1U4W9lVTG2Kr_J_XR%0D%0AN7YB7e3Ld5hssaKEefeRX_ygv9n3sTB49WJp3MRX-24xVsjYz8ievw7YqUM9iL5Ft61Qmu1pgl0g%0D%0ANB7hBSpgdFZ3SnW2hTsfhpIWJ55LHhpGKB16MnKgIiWgD4fUyPoLMO7-1cXnM7lmRg%0D%0A&ref_=ft_nv_fol_tw"
+title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_inst&token=BCYv_YjUAdt1Ef7WIf5zZlq-0ozVy597gweSgBeFtIf_HDBdgTyAlr379VKgWL7JTJNgitJevydY%0D%0AtEENXToZU75TvM4wqvj3WPl83kRRUWCKrk72OPjQFc_Kz0HVXxMnBLXgGOtzczdZ_3a7j6i3lWlY%0D%0A9BDrgGkK3kRKcRDbVryA6nhMik-3sZRLhrYCm_O6guKUbyNBUCVT4hyFv7LtSLT9PA%0D%0A&ref_=ft_nv_fol_inst"
+title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
+</a>
+        </li>
+    </ul>
+</div>
+<div id="nb_personal">
+    <ul id="consumer_user_nav" class="main_nav">
+            <li class="css_nav_menu no_arrow" id="navUserMenu">
+            <p class="navCategory singleLine">
+                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.8/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6IjFiMGQiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vP3JlZl89bnZfZmJfbGdpbiIsIm1hbnVhbExpbmsiOiJmYWxzZSJ9&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler%2F" class="signin-button">
+                <span class="facebook-logo"></span>
+                <span class="signin-facebook-text">Sign in with Facebook</span></a>
+                <a href="https://www.imdb.com/registration/signin?u=/feature/genre/&ref_=nv_usr_lgin_1"
+rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in options</a>
+                </p>
+        </li>
+    </ul>
+</div>
+  </div>
+</div>
+	
+	<!-- no content received for slot: navstrip -->
+	
+	
+	
+<!-- begin INJECTED_NAVSTRIP -->
+<div id="injected_navstrip_wrapper" class="injected_slot">
+<script type="text/javascript">
+doWithAds(function(){
+if ('injected_slot' != 'injected_slot') {
+ad_utils.register_ad('injected_navstrip');
+}
+});
+</script>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=877412504865;ord=877412504865?" frameborder="0" id="injected_navstrip" marginwidth="0" marginheight="0" name="injected_navstrip" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
+<div id="injected_navstrip_reflow_helper"></div>
+<script id="injected_navstrip_rendering">
+doWithAds(function(){
+if ('injected_slot' == 'injected_slot') {
+ad_utils.inject_ad.register('injected_navstrip');
+} else {
+ad_utils.gpt.render_ad('injected_navstrip');
+}
+}, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+</script>
+<!-- End INJECTED_NAVSTRIP -->
+	
+<script>
+    if (typeof uet == 'function') {
+      uet("ne");
+    }
+</script>
+              
+
+<script>
+    if (typeof uet == 'function') {
+      uet("cf");
+    }
+</script>
+
+
+    <div id="pagecontent">
+    <div class="pagecontent">
+	
+	
+<!-- begin INJECTED_BILLBOARD -->
+<div id="injected_billboard_wrapper" class="injected_slot">
+<script type="text/javascript">
+doWithAds(function(){
+if ('injected_slot' != 'injected_slot') {
+ad_utils.register_ad('injected_billboard');
+}
+});
+</script>
+<iframe allowtransparency="true" class="yesScript" data-dart-params="#doubleclick;u=877412504865;ord=877412504865?" frameborder="0" id="injected_billboard" marginwidth="0" marginheight="0" name="injected_billboard" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="0" data-original-height="0" width="0" height="0" ></iframe> </div>
+<div id="injected_billboard_reflow_helper"></div>
+<script id="injected_billboard_rendering">
+doWithAds(function(){
+if ('injected_slot' == 'injected_slot') {
+ad_utils.inject_ad.register('injected_billboard');
+} else {
+ad_utils.gpt.render_ad('injected_billboard');
+}
+}, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+</script>
+<!-- End INJECTED_BILLBOARD -->
+	
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    </div>
+    <div id="top-slot-wrapper" class="pagecontent">
+
+    
+    
+    
+
+    
+    
+    
+    </div>
+    <div class="pagecontent">
+        <div id="content-2-wide">
+            <div id="main">
+
+    
+    
+    
+
+    
+    
+    
+<script>
+    if (typeof uet == 'function') {
+      uet("af");
+    }
+</script>
+
+
+    
+    
+        <a name="slot_center-1"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<span class="widget_header"> <span class="oneline"> <h3>Browse Popular Genres</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=comedy&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=75c37eae-37a7-4027-a7ca-3fd76067dd90&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr1_i_1" > <img itemprop="image" class="pri_image" title="Comedy" alt="Comedy" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Comedy._CB1513316167_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=sci-fi&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=75c37eae-37a7-4027-a7ca-3fd76067dd90&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr1_i_2" > <img itemprop="image" class="pri_image" title="Sci-Fi" alt="Sci-Fi" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Sci-Fi._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image last_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=horror&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=75c37eae-37a7-4027-a7ca-3fd76067dd90&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr1_i_3" > <img itemprop="image" class="pri_image" title="Horror" alt="Horror" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Horror._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+                if(typeof uet === 'function'){uet("af");}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+        <a name="slot_center-2"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=romance&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e0da8c98-35e8-4ebd-8e86-e7d39c92730c&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr2_i_1" > <img itemprop="image" class="pri_image" title="Romance" alt="Romance" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Romance._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=action&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e0da8c98-35e8-4ebd-8e86-e7d39c92730c&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr2_i_2" > <img itemprop="image" class="pri_image" title="Action" alt="Action" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Action._CB1513316166_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image last_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=thriller&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e0da8c98-35e8-4ebd-8e86-e7d39c92730c&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr2_i_3" > <img itemprop="image" class="pri_image" title="Thriller" alt="Thriller" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Thriller._CB1513316169_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_center-3"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=drama&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f1cf7b98-03fb-4a83-95f3-d833fdba0471&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr3_i_1" > <img itemprop="image" class="pri_image" title="Drama" alt="Drama" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Drama._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=mystery&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f1cf7b98-03fb-4a83-95f3-d833fdba0471&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr3_i_2" > <img itemprop="image" class="pri_image" title="Mystery" alt="Mystery" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Mystery._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image last_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=crime&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f1cf7b98-03fb-4a83-95f3-d833fdba0471&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr3_i_3" > <img itemprop="image" class="pri_image" title="Crime" alt="Crime" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Crime._CB1513316167_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+        <a name="slot_center-4"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=animation&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=fd0c0dd4-de47-4168-baa8-239e02fd9ee7&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr4_i_1" > <img itemprop="image" class="pri_image" title="Animation" alt="Animation" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Animation._CB1513316167_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=adventure&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=fd0c0dd4-de47-4168-baa8-239e02fd9ee7&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr4_i_2" > <img itemprop="image" class="pri_image" title="Adventure" alt="Adventure" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Adventure._CB1513316166_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image last_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=fantasy&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=fd0c0dd4-de47-4168-baa8-239e02fd9ee7&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr4_i_3" > <img itemprop="image" class="pri_image" title="Fantasy" alt="Fantasy" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Fantasy._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_center-5"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_left"> <div class="ninja_image first_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=comedy,romance&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=15aedf0d-e467-4a1a-922a-e0cbd7299e84&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-5&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr5_i_1" > <img itemprop="image" class="pri_image" title="Comedy-Romance" alt="Comedy-Romance" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Comedy-Romance._CB1513316167_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?genres=action,comedy&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=15aedf0d-e467-4a1a-922a-e0cbd7299e84&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-5&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr5_i_2" > <img itemprop="image" class="pri_image" title="Action-Comedy" alt="Action-Comedy" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Action-Comedy._CB1513316166_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div><div class="ninja_image ninja_image_relative_padding widget_padding" style="width:2%;"></div><div class="ninja_image last_image" style="width:31.952%;height:auto;" > <div style="width:100%;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="https://www.imdb.com/search/title?keywords=superhero&explore=title_type,genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=15aedf0d-e467-4a1a-922a-e0cbd7299e84&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-5&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pr5_i_3" > <img itemprop="image" class="pri_image" title="Superhero" alt="Superhero" src="https://m.media-amazon.com/images/G/01/IMDb/genres/Superhero._CB1513316168_SX233_CR0,0,233,131_AL_.jpg" /> </a> </div> </div> </div> </div> </div> </div> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_center-6"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Popular Movies by Genre</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=action&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_1" > Action </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=adventure&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_2" > Adventure </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=animation&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_3" > Animation </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=biography&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_4" > Biography </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=comedy&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_5" > Comedy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=crime&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_6" > Crime </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?title_type=documentary&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_7" > Documentary </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=drama&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_8" > Drama </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=family&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_9" > Family </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=fantasy&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_10" > Fantasy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=film-noir&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_11" > Film Noir </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=history&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_12" > History </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=horror&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_13" > Horror </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=music&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_14" > Music </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=musical&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_15" > Musical </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=mystery&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_16" > Mystery </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=romance&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_17" > Romance </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sci-fi&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_18" > Sci-Fi </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?title_type=short&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_19" > Short </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sport&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_20" > Sport </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?keywords=superhero&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_21" > Superhero </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=thriller&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_22" > Thriller </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=war&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_23" > War </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=western&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=17d3863a-3e07-4c9b-a09a-f643edc8e914&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-6&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvpop_24" > Western </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_center-7"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Popular TV Series by Genre</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=action&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_1" > Action </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=adventure&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_2" > Adventure </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=animation&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_3" > Animation </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=biography&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_4" > Biography </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=comedy&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_5" > Comedy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=crime&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_6" > Crime </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=documentary&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_7" > Documentary </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=drama&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_8" > Drama </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=family&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_9" > Family </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=fantasy&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_10" > Fantasy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=game-show&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_11" > Game Show </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=history&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_12" > History </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=horror&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_13" > Horror </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=music&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_14" > Music </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=musical&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_15" > Musical </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=mystery&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_16" > Mystery </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=news&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_17" > News </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=reality-tv&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_18" > Reality-TV </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=romance&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_19" > Romance </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sci-fi&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_20" > Sci-Fi </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sport&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_21" > Sport </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?keywords=superhero&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_22" > Superhero </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=talk-show&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_23" > Talk Show </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=thriller&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_24" > Thriller </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=war&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_25" > War </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=western&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=b5e7d12d-f770-44d0-b040-dc7cde53a6b4&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-7&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvpop_26" > Western </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_center-8"></a>
+        <div class="article">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Prime Video (You Haven't Rated) by Genre</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=action&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_1" > Action </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=adventure&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_2" > Adventure </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=animation&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_3" > Animation </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=biography&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_4" > Biography </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=comedy&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_5" > Comedy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=crime&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_6" > Crime </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=documentary&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_7" > Documentary </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=drama&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_8" > Drama </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=family&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_9" > Family </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=fantasy&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_10" > Fantasy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=film-noir&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_11" > Film Noir </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=history&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_12" > History </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=horror&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_13" > Horror </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=music&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_14" > Music </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=musical&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_15" > Musical </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=mystery&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_16" > Mystery </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=romance&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_17" > Romance </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sci-fi&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_18" > Sci-Fi </a> </div> </div> </div> </div> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sport&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_19" > Sport </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?keywords=superhero&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_20" > Superhero </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=thriller&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_21" > Thriller </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=war&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_22" > War </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=western&my_ratings=exclude&online_availability=US/today/Amazon/subs&explore=genres,title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=6cf167a4-53b4-4e04-a595-615471c0a7fa&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=center-8&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_pvpop_23" > Western </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+            </div>
+            <div id="sidebar">
+	
+	
+<!-- begin TOP_RHS -->
+<div id="top_rhs_wrapper" class="cornerstone_slot">
+<script type="text/javascript">
+doWithAds(function(){
+if ('cornerstone_slot' != 'injected_slot') {
+ad_utils.register_ad('top_rhs');
+}
+});
+</script>
+<iframe allowtransparency="true" class="yesScript" data-blank-serverside frameborder="0" id="top_rhs" marginwidth="0" marginheight="0" name="top_rhs" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });" scrolling="no" data-original-width="300" data-original-height="250" width="300" height="250" ></iframe> </div>
+<div id="top_rhs_reflow_helper"></div>
+<div id="top_rhs_after" class="after_ad" style="visibility:hidden;">
+<a class="yesScript" href="#" onclick="ad_utils.show_ad_feedback('top_rhs');return false;" id="ad_feedback_top_rhs">ad feedback</a>
+</div>
+<script id="top_rhs_rendering">
+doWithAds(function(){
+if ('cornerstone_slot' == 'injected_slot') {
+ad_utils.inject_ad.register('top_rhs');
+} else {
+ad_utils.gpt.render_ad('top_rhs');
+}
+}, "ad_utils not defined, unable to render client-side GPT ad or injected ad.");
+</script>
+<!-- End TOP_RHS -->
+	
+
+    
+    
+        <a name="slot_right-1"></a>
+        <div class="aux-content-widget-2">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Popular Themes</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=anime&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_1" > Anime </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=avant-garde&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_2" > Avant-Garde </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=b-movie&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_3" > B-Movie </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=chick-flick&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_4" > Chick Flick </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=coming-of-age&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_5" > Coming of Age </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=cult-film&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_6" > Cult Film </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=dystopia&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_7" > Dystopia </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=epic&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_8" > Epic </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=femme-fatale&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_9" > Femme Fatale </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=high-school&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_10" > High School </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=kung-fu&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_11" > Kung Fu </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=mockumentary&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_12" > Mockumentary </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=post-apocalypse&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_13" > Post-Apocalypse </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=spoof&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_14" > Spoof </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=supernatural&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_15" > Supernatural </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=time-travel&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_16" > Time Travel </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=vampire&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_17" > Vampire </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?count=100&keywords=zombie&num_votes=2000,&explore=title_type&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_18" > Zombie </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/keyword?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3999419c-1229-4fa7-9240-55e83e21cecb&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-1&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_kw_19" > Browse/Search by keyword </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+        <a name="slot_right-2"></a>
+        <div class="aux-content-widget-2">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Movie Charts</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/chart/moviemeter?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f64ddce8-e7c9-426a-a97f-375b1c7263f2&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvch_1" > Most Popular Movies </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/chart/top?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f64ddce8-e7c9-426a-a97f-375b1c7263f2&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvch_2" > Top Rated Movies </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/india/top-rated-indian-movies/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f64ddce8-e7c9-426a-a97f-375b1c7263f2&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvch_3" > Top Rated Indian Movies </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?production_status=post_production,filming,pre_production,completed,script,announced&title_type=feature&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=f64ddce8-e7c9-426a-a97f-375b1c7263f2&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-2&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvch_4" > Most Popular Future Movies </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+        <a name="slot_right-3"></a>
+        <div class="aux-content-widget-2">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>TV Charts</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/chart/tvmeter?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3d57da14-d6fc-4598-ae48-32c97e707462&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvch_1" > Most Popular TV </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/chart/toptv?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3d57da14-d6fc-4598-ae48-32c97e707462&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvch_2" > Top Rated TV </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?production_status=post_production,filming,pre_production,completed,script,announced&title_type=tv_series,mini_series&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=3d57da14-d6fc-4598-ae48-32c97e707462&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-3&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_tvch_3" > Most Popular Future TV </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+	
+	<!-- no content received for slot: rhs_cornerstone -->
+	
+
+    
+    
+        <a name="slot_right-4"></a>
+        <div class="aux-content-widget-2">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','LinksWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+            <div class="ab_links">
+<span class="widget_header"> <span class="oneline"> <h3>Top Rated English Movies by Genre</h3> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="full-table"> <div class="table-cell"> <div class="full-table"> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=action&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_1" > Action </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=adventure&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_2" > Adventure </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=animation&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_3" > Animation </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=biography&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_4" > Biography </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=comedy&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_5" > Comedy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=crime&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_6" > Crime </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?languages=en&sort=user_rating,desc&title_type=documentary&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_7" > Documentary </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=drama&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_8" > Drama </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=family&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_9" > Family </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=fantasy&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_10" > Fantasy </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=film-noir&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_11" > Film Noir </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=history&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_12" > History </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=horror&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_13" > Horror </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=music&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_14" > Music </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=musical&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_15" > Musical </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=mystery&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_16" > Mystery </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=romance&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_17" > Romance </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sci-fi&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_18" > Sci-Fi </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?languages=en&sort=user_rating,desc&title_type=short&num_votes=3000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_19" > Short </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=sport&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_20" > Sport </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?keywords=superhero&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_21" > Superhero </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=thriller&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_22" > Thriller </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=war&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_23" > War </a> </div> </div> <div class="table-row"> <div class="table-cell primary"> <a href="/search/title?genres=western&languages=en&sort=user_rating,desc&title_type=feature&num_votes=10000,&explore=genres&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=d0addcab-e8f0-45ef-9965-515319b79038&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-4&pf_rd_t=15051&pf_rd_i=genre&ref_=ft_gnr_mvtre_24" > Western </a> </div> </div> </div> </div> </div> </div> </div>    </div>
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','LinksWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+        <a name="slot_right-5"></a>
+        <div class="aux-content-widget-2">
+        
+    
+        
+                                
+
+    
+            <script type="text/javascript">if(typeof uet === 'function'){uet('bb','NinjaWidget',{wb:1});}</script>
+                                
+
+                    
+    
+        <span class="ab_widget">
+        
+    
+
+    <div class="ab_ninja">
+<span class="widget_header"> <span class="oneline"> <h3>Advanced Search</h3> </span> </span> <p class="blurb">For additional genre searches, please visit <a href="/offsite/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=30779887-c454-41f4-9c7a-30e3651cf52f&pf_rd_r=CPT6D7TDQK97JBTMH3AJ&pf_rd_s=right-5&pf_rd_t=15051&pf_rd_i=genre&page-action=offsite-imdb&token=BCYi4rS1TjeAUU_gofHcuW0ZScH38Dx1ZRN4s3tGPSbLqBe-MRkf0Rp0EdDt2oppy3Z3mKLZTegt%0D%0AmMkQOuhJ8h-fvI89v_hr0oVvdS0B3nRjkljuMOvX7ixeArWdiuiTj0QAwt8WHeLHz6KOIXGQMTom%0D%0ApXzkOzg2jrZV2mxRwyRThH4q2w-EsEre6g43bpcFMPk_zVK5c8Lz48efjzFqqr2DO-idH3SK8-Lk%0D%0Auiu8NwrThZvQYpTYBSQsR0C8ZoOQSjRHuguYikNa9ci7yD8ftzK82Jlucqo6XL4iG_U65ujJCS16%0D%0AlepVtNXKnJpszArCjf-kYZkWywcKTXhIn8Lov9H8sA78mjQqyU2-8ubiuHyNTU0%0D%0A&ref_=ft_gnr_advsrch_lk1">IMDb Advanced Title Search</a></p> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> </div> </div>    </div>
+    
+
+                        
+        </span>
+
+
+
+            <script type="text/javascript">
+                if(typeof uex === 'function'){uex('ld','NinjaWidget',{wb:1});}
+            </script>
+        
+
+
+
+
+        </div>
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+            </div>
+            <br class="clear" />
+        </div>
+
+
+    
+    
+    
+
+    
+    
+    
+
+
+        <br class="clear" />
+    </div>
+</div>
+
+
+
+
+
+
+    <div id="footer" class="ft">
+
+            <div id="rvi-div">
+                <div class="recently-viewed">
+                  <div class="header">
+                    <div class="rhs">
+                        <a id="clear_rvi" href="#">Clear your history</a>
+                    </div>
+                    <h3>Recently Viewed</h3>
+                    <br clear="all" />
+                  </div>
+                    <div class="items">&nbsp;</div>
+                </div>
+                <br class="clear">
+            </div>
+
+	
+	
+	
+
+        <div class="container footer-grid-wrapper">
+            <div class="row footer-row">
+                <div class="col outside">
+    <h3>IMDb Everywhere</h3>
+    <div class="app-links">
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYjYd1AqMQQEFIeGFny4bD2TpqWUF0cm2AAP26-h19hDdkqY_xHFLBxp38ty6HIN3NJvcEa4Aa3%0D%0AYOfX8AsyJojxx7uOQh-f6-5jG5DbpKC3F55XVac9_XL_CatuveM0niaj6E_199u3gZQc8zfpOB2B%0D%0A3dEOfYZAbkBGI4SUbHBb1hP7-lVZOc0Qph4kYanjV_5QZyY4MYO4Z1dzESm9ZZOTc3Rna4N5eJ5C%0D%0A8Y3ztoveqqY%0D%0A&ref_=ft_app_apple"
+title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
+</a>
+    <a href="/offsite/?page-action=ft_app_google&token=BCYpjb6iC6kDLBDYqiKr6DM_0Fsg0vjbIn11E5fe_YFtG3-f3J-bMI4XpPa4PjVqm7gyYfZnp5Fe%0D%0ACCtqtaYQNHe0cv4cVgO_QhJWIqaWBKXqk9JKelGXXvlH3jLrjIq3be5shXjT_mynk_uLtX5R0kUw%0D%0Af9Mz5SesD3RX71n4zTp4lJuk8w-vLznBnpW8dQYEg609g-342oBteoDb42vALyH0NLOAevTnpKg4%0D%0AJPzV_kvrEKo%0D%0A&ref_=ft_app_google"
+title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
+</a>
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYrUlXvLa2JUoAbpiHdDe-uE6xlLp1I0U-AbsI_W6DfrJKj3arbiQHBqOUurYHsSSj53adzsKJZ%0D%0AnghEFxIzhVfhf0wAKSJybyYEv01vXeZ3u8m3dc-XqLwodgLfGmuvxkGUostPH9PNucwX9lgVsAOE%0D%0AUDuJCOJczNZO0ChAFfO2TcDXwdWMeTaTZ4vpqQRd9TQniEOf49ddLKjS0Qfw3bQBmlU5bu7UH-XK%0D%0A7iWaH12qdyAVZDG1Dz-RSC_X8ALih54E-IQdfGy9ZSz3hQn-SnH3JnxDf8pHu-flTEZ8g6CyWQNR%0D%0A1sP-AWC0ARC-iab3dqxutqLYlEjTwdn_D7Yx8rpxH5VA-xl5HT0B0LQoInuWmpAHjLVkesbI5IAG%0D%0A7ze7pbHDX6tFwPv_p5VaWvKDmbt9z4lng9fHB5vjAfiFhJwDggI%0D%0A&ref_=ft_app_amazon"
+title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
+</a>
+    </div>
+
+    <p>Find showtimes, watch trailers, browse photos, track your Watchlist and rate your favorite movies and TV shows on your phone or tablet!</p>
+
+    <a href="https://m.imdb.com?ref_=ft_mdot"
+class="touchlink" >IMDb Mobile site</a>
+                </div>
+                <div class="col center">
+  <div class="link-bar icon-link-bar">
+    <h3>
+      Follow IMDb on
+      <div>
+
+    <a href="/offsite/?page-action=fol_fb&token=BCYplj_LMfngbTMc4M79Qnq6k8uDqbypqj2WfV_GrwDLFLRgADebqwF2tB8Cri0rjq3JtUqJqbOq%0D%0A0DryXzpth3HCMHoLVU_Y-23Fp9CPar3m6lYpupZeEA2RNEW0whe6gTdafmEX9v1BzgI2RGPWzo6U%0D%0A-Uq9XIO0LtpmRtzKFmULUfK70Em9OG5sqW9g8K_-c1wR6aS2xrjrYu0jhX_RFhCv5A%0D%0A&ref_=ft_ft_fol_fb"
+title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_tw&token=BCYgH6JJUR9Y8dUXdx6vr2EL2e7x05uMHHFj3t_T_isBNt1iNyugksWPMEwEczUYXanBusEsjlvz%0D%0ApO-sX2lLrRqufmmageMyvROqIRC6v6xpXOmokBqvbmcofnjJ-GBvRGdvK3ORayU8gVqcpSXahfq5%0D%0AFHrfxQesXoLx3kDHyAVk8pE1ulP9jg0yIdHtEAjuB3KY%0D%0A&ref_=ft_ft_fol_tw"
+title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
+</a>
+    <a href="/offsite/?page-action=fol_inst&token=BCYlyLc8QFVhTQNukvWlAEeyhUSJmDBaDHvmTJk0R1eXXVtRWAwPwbcaWLyc3GWe8RE67niklR2S%0D%0AYxWuXs64CqoEqNr-UK_bTGu4p9VqAlTo6J9Ea8x6Gsie4m_AucjYhq8fVmy-o-PFxATUNpqiZsUI%0D%0AKafaWFiyJVZsAcWejPfuxUblvIBbcT9QWq4LPLYoYaaxrsuTjjiPOU6j_UG17s2tAQ%0D%0A&ref_=ft_ft_fol_inst"
+title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
+</a>
+      </div>
+    </h3>
+  </div>
+                </div>
+                <div class="col outside">
+    <div class="row">
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="/?ref_=ft_hm"
+>Home</a></li>
+                <li><a href="/chart/top?ref_=ft_250"
+>Top Rated Movies</a></li>
+                <li><a href="/chart/?ref_=ft_cht"
+>Box Office</a></li>
+                <li><a href="/tv/?ref_=ft_tv"
+>TV</a></li>
+                <li><a href="/movies-coming-soon/?ref_=ft_cs"
+>Coming Soon</a></li>
+                <li><a href="/a2z?ref_=ft_si"
+>Site Index</a></li>
+                <li><a href="/search?ref_=ft_sr"
+>Search</a></li>
+                <li><a href="/movies-in-theaters/?ref_=ft_inth"
+>In Theaters</a></li>
+            </ul>
+        </div>
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="/helpdesk/contact?ref_=ft_con"
+>Contact Us</a></li>
+                <li>        <a href="https://secure.imdb.com/register-imdb/form-v2?ref_=ft_reg"
+>Register</a>
+</li>
+                <li><a href="/news/?ref_=ft_nw"
+>News</a></li>
+                <li class="spacer"></li>
+                <li><a href="/pressroom/?ref_=ft_pr"
+>Press Room</a></li>
+                <li><a href="https://advertising.amazon.com/lp/imdb?ref_=ft_ad"
+>Advertising</a></li>
+                <li><a href="/jobs?ref_=ft_jb"
+>Jobs</a></li>
+            </ul>
+        </div>
+        <div class="col col-4">
+            <ul class="unstyled">
+                <li><a href="https://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
+>IMDbPro</a></li>
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYu7zAuDPjIFzcPWXVRoZIYleYJJqIGct4MGK_BG4WLquoDTgJo7p4GIgL4ce-8SI_bezZLEC8T%0D%0Af7AIgufvK8V-XHuxh9TSPhZ9CHtmPiY8WLM8Als7ohqZtNUujFz0ziOjfeZKaMk9555yKVzO6uZ2%0D%0A7UPWibPP68s7aLFdIOz_ToR3ILbODDNOjddWDTJWZ3XzKP0bnWL5OY_9oAg0eYhYJg%0D%0A&ref_=ft_bom"
+itemprop='url'>Box Office Mojo</a>
+</li>
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYk-CX3h5GeSI2JP2fHn3JRawgLAY7ZlujSHQrA2BxsKuUfgwfnTtotzpa_zX-y6Too0y_fp2L-%0D%0AJRSfy02L4CKF0tiux4WxGIqw3dQOCiHV2pFkgUaniemzvK6ppUE4zuKo_3h-ISBEtxYTY2In99Ng%0D%0AhNNdrASSBDwE-pj-Rd4dbjJKZuVc2C4m_3URcTULeWzjnf8c7QUrW0tEoyigO-kIBA%0D%0A&ref_=ft_wab"
+itemprop='url'>Withoutabox</a>
+</li>
+                <li class="spacer"></li>
+                <li><a href="/conditions?ref_=ft_cou"
+>Conditions of Use</a></li>
+                <li><a href="/privacy?ref_=ft_pvc"
+>Privacy Policy</a></li>
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYoKPRxEX1b-MA45ReXjsrNAwLrLszPPEB7NYl_l5uqMShBRMjALLPrWle5zAYBlwK6J85VNCJs%0D%0Aqab2Jx51iCUbyvd50Z8ESzYQwczRfr5U7JTPWnqAGMCiLQmoASF_x6r-9wPeFE7vkWKpJfs2bDAO%0D%0AHZbikIUTtt42VEHvTshHbP4dArvR2Lt-JxjH-afV_BTb-l4Tqv2hUs20yACLAZ9IU1lut1H3ByPj%0D%0A_J7Hav_VM8Hs1DaLagi2V35st2tZGURf%0D%0A&ref_=ft_iba"
+itemprop='url'>Interest-Based Ads</a>
+</li>
+                <li class="spacer"></li>
+            </ul>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ft-copy float-right">
+                <a href="/conditions"
+>Copyright &copy;</a> 1990-2018
+                <a href="https://help.imdb.com/imdb?ref_=cons_ftr_imdb"
+>IMDb.com, Inc.</a>
+            </div>
+            <div>
+                An <span id="amazon_logo" class="footer_logo" align="middle">Amazon.com</span> company.
+            </div>
+        </div>
+
+
+
+    <table class="footer" id="amazon-affiliates">
+        <tr>
+            <td colspan="8">
+                Amazon Affiliates
+            </td>
+        </tr>
+        <tr>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-aiv&token=BCYiTvBjrEFBwRYdCSYSxrmSMsV7DpxXuZm3eV1kxETSfaB0b2vIqqi9pWx9_WmgTM3HD-lUnMUV%0D%0A_ZKlYtZcIJToJkYglKNMfcOBjjFIRN_ZsC69aQ7iIHqgh8cy8BG0Oo6F2Q7Mey632DC1RSVwezKF%0D%0A9Ttj3vXOLbkQLFYTTqBPj6Cygt1RtgGoX0WGVBAi5LTHWxwWfLpF1xkEFb4oO4bikvfr7Kxxsmj3%0D%0AgfLv5KorEgo%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Video</span><br>
+                <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-piv&token=BCYtDZckENfQyFiBiqzL9xRaCImSEAslOjLBR4PClBlGwMjEclpBkX9zi6cn9_vRa2wz8fCqK4HD%0D%0AKtXB46Ki5HkKsCL4WoHBI_W_FpS4iM3k1xsh9KnV-tfZuDqEnO2bPTB5KHgSOnUCazx9p_wxgYci%0D%0AN8hKysq2aIyqMNgKr3oFqn-RU811XrhAQT1DlEo8OfG1JY0vgulEWrL6sfoi4gaA35xrlKPBNmeJ%0D%0AzxrxmnRlYRI%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Prime Video</span><br>
+                <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYhds6Sk6J-vDhJt-a2YgjZOSwefs5xYRTC1lapry6ygC_aulnrDmunAV0lBqzYwLwAAD1LpiOP%0D%0AT_NtK9vC0GLv_TfHktkZRgVbhO2yQrGlJdvgBOC0tO0o-ShanyLvcbTvaJsO__OLTTwYZP_GI0lK%0D%0A4grDn_1AcDkZPVEsGKPHiq0BggbV1iD90hz6FS7TwA-H-gmCwk6s4vwh0vvnsBubTd5OrXLqIhTo%0D%0ASSms_D1pu-g%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYqL9kTJi4hwOsEE_VfsZfOqjL9gh_J1IFuSyOOamlAnWifaNSfZ93uoYK1k__UP7Rdo8dZ7S9M%0D%0ANBTjdc80HT8klSA3Pjh30uQa7YrAzpoCSJO05_hcpSgwjWsYa152BBCMF9IwkBwnuKtA05pdjrjI%0D%0Aybx_e_vnlhWdIrhe5wPqHnvEbZ43M3c-FszChMDr25CAOftNREGX9j3xlv0c3_n9-5lclRe4pjIM%0D%0A8SdjOyVk44U%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYgkuV3gcm55ech-T8M8OFhjHhVeU94BSecs86BiYSBNGZqWSHkoHGv0XErdrnT_EWtu1sLSX6f%0D%0AmDsH0TOzyxCgtu1t4bUsbiLgFN6KjkqtLiX2O2Ce_-_acdt417zZKDG5mExb-TTqORCTqaaXDfgJ%0D%0AGSZV4Z4jdUTYmaukCOEIAL63LFHF7zhWIRvDYy1IhwRU76sgS-DvXZ4qbJg-14ei8jIqnmyqn6Kd%0D%0AHSHQ3x1yZL8%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon France</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYjkLyhOwsWutVYi-YStTsppbdsrOp6BX_6PHFJ4Z7LQszckqMR5rKjUIigDFezi37ho8HF9LQe%0D%0AGQR42Rv-jN4AZ06qmoXs_XxhPCavwqy9Jjtcz4WHOFqxW8aWAgK621LwkhtZHvjfXAjHlvN2Gvx9%0D%0AHZgQP6BDWQeSbHVJsTTnDQ98YtuDXLX5V0fLuYzFCNKFl0aWc_kxom4IB_urveTt1SuCPg7LlnqB%0D%0A3loIKO7AOhT1a1thFespGRT7R6iJixT2%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Amazon India</span><br>
+                <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYsc58EF90X0XkZjccwTTLLLfcbeksxQBexup4l-CiFlMmUakxwkcI5Xg2POmSVIXSg26l2L8LG%0D%0Ak10-F1jZYwhmFE1VMDN8OuDZgHABcEN9hN_6DZB4nxcVTKMFX69-sDmhB0DnkqjFBC4OopYN0hwj%0D%0AvsA1ntb_EKLL_1ouSUpCZPU%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">DPReview</span><br>
+                <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
+            </a>
+        </div>
+    </td>
+
+    <td>
+        <div>
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYv23RNh3j2Swu3YMb11YHs3y76lf12wX6aLZ1hQjsv0ytDmPTZsHYJx3qz_BMN2IkMJXNuYkqU%0D%0AO6PbLxDlI5lYOe_Akgu9oSq7OeIOAwbDyF9vbroOvPP6sEXgMdng_yq3BPYVW3H8NZtGWfBWAYqh%0D%0A__rKk-94Pz8s2bmlQWgyo8U%0D%0A" class="amazon-affiliate-site-link">
+                <span class="amazon-affiliate-site-name">Audible</span><br>
+                <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
+            </a>
+        </div>
+    </td>
+        </tr>
+    </table>
+      </div>
+            </div>
+        </div>
+
+
+
+
+<script type="text/javascript" src="https://images-na.ssl-images-amazon.com/images/G/01/imdb/js/collections/common-1818413004._CB502345490_.js"></script>
+<script type="text/javascript" src="https://images-na.ssl-images-amazon.com/images/G/01/imdb/js/collections/pagelayout-2375519533._CB500357152_.js"></script>
+
+<script type="text/javascript" id="login">
+(function(){
+    var readyTimeout = setInterval(function() {
+        if (window.jQuery && window.imdb && window.imdb.login_lightbox) {
+            clearTimeout(readyTimeout);
+            window.imdb.login_lightbox();
+        }
+    }, 100);
+})();
+</script>
+
+        <script type="text/javascript">
+        function jQueryOnReady(remaining_count) {
+            if (window.jQuery && typeof $.fn.watchlistRibbon !== 'undefined') {
+                jQuery(
+                     function() { $('#content-2-wide').watchlistRibbon('.ribbonize'); }
+                );
+            } else if (remaining_count > 0) {
+                setTimeout(function() { jQueryOnReady(remaining_count-1) }, 100);
+            }
+        }
+        jQueryOnReady(50);
+        </script>
+
+<!-- begin ads footer -->
+
+
+<!-- Begin SIS code -->
+<script>
+    if (typeof uet == 'function') {
+      uet("bb", "LoadSis", {wb: 1});
+    }
+</script>
+
+<div id="sis_pixel_r2" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;">
+    <iframe id="sis_pixel_sitewide" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+
+<script>
+    (function(window, callback) {
+        window.attachEvent ? window.attachEvent("onload", callback) : window.addEventListener && window.addEventListener("load", callback, !1);
+    })(window, function() {
+
+        setTimeout(function() {
+            var el = document.getElementById("sis_pixel_sitewide");
+            el.src="https://aax-eu.amazon-adsystem.com/s/iu3?d=imdb.com&a1=&a2=010105f16b97d4184db3ec55298a276e1a3404db02a44f238118a147334fae1a2e03&cb=877412504865&pId=&r=1&rP=https%3A%2F%2Fwww.imdb.com%2Ffeature%2Fgenre%2F&encoding=server";
+            el.onload = function() {
+                if (typeof uex == 'function') {
+                    uex("ld", "LoadSis", {wb: 1});
+                }
+            }
+        },20);
+    });
+
+    if (typeof uet == 'function') {
+        uet("be", "LoadSis", {wb: 1});
+    }
+</script>
+
+<!-- End SIS code -->
+
+<!-- begin comscore beacon -->
+<script type="text/javascript" src='https://ia.media-imdb.com/images/G/01/imdbads/js/beacon-1792157672._CB514933407_.js'></script>
+<script type="text/javascript">
+if(window.COMSCORE){
+COMSCORE.beacon({
+c1: 2,
+c2:"6034961",
+c3:"",
+c4:"https://www.imdb.com/feature/genre/",
+c5:"",
+c6:"",
+c15:""
+});
+}
+</script>
+<noscript>
+<img src="https://sb.scorecardresearch.com/p?c1=2&c2=6034961&c3=&c4=https%3A%2F%2Fwww.imdb.com%2Ffeature%2Fgenre%2F&c5=c6=&15=&cj=1"/>
+</noscript>
+<!-- end comscore beacon -->
+
+<script>
+    doWithAds(function(){
+        (new Image()).src = "https://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=877412504865&ord=877412504865";
+    },"unable to request AAN pixel");
+</script>
+
+<!-- end ads footer -->
+
+<div id="servertime" time="122"/>
+
+
+
+<script>
+    if (typeof uet == 'function') {
+      uet("be");
+    }
+</script>
+        <div id='be' style="display:none;visibility:hidden;"><form name='ue_backdetect' action="get"><input type="hidden" name='ue_back' value='1' /></form>
+
+
+<script type="text/javascript">
+
+var ue_mbl=ue_csm.ue.exec(function(e,a){function l(f){b=f||{};a.AMZNPerformance=b;b.transition=b.transition||{};b.timing=b.timing||{};e.ue.exec(m,"csm-android-check")()&&b.tags instanceof Array&&(f=-1!=b.tags.indexOf("usesAppStartTime")||b.transition.type?!b.transition.type&&-1<b.tags.indexOf("usesAppStartTime")?"warm-start":void 0:"view-transition",f&&(b.transition.type=f));"reload"===c._nt&&e.ue_orct||"intrapage-transition"===c._nt?a.performance&&performance.timing&&performance.timing.navigationStart?
+b.timing.transitionStart=a.performance.timing.navigationStart:delete b.timing.transitionStart:"undefined"===typeof c._nt&&a.performance&&performance.timing&&performance.timing.navigationStart&&a.history&&"function"===typeof a.History&&"object"===typeof a.history&&history.length&&1!=history.length&&(b.timing.transitionStart=a.performance.timing.navigationStart);f=b.transition;var d;d=c._nt?c._nt:void 0;f.subType=d;a.ue&&a.ue.tag&&a.ue.tag("has-AMZNPerformance");c.isl&&a.uex&&uex("at","csm-timing");
+n()}function p(b){a.ue&&a.ue.count&&a.ue.count("csm-cordova-plugin-failed",1)}function m(){return a.webclient&&"function"===typeof a.webclient.getRealClickTime?a.cordova&&a.cordova.platformId&&"ios"==a.cordova.platformId?!1:!0:!1}function n(){try{P.register("AMZNPerformance",function(){return b})}catch(a){}}function h(){if(!b)return"";ue_mbl.cnt=null;for(var a=b.timing,d=b.transition,a=["mts",k(a.transitionStart),"mps",k(a.processStart),"mtt",d.type,"mtst",d.subType,"mtlt",d.launchType],d="",c=0;c<
+a.length;c+=2){var e=a[c],g=a[c+1];"undefined"!==typeof g&&(d+="&"+e+"="+g)}return d}function k(a){if("undefined"!==typeof a&&"undefined"!==typeof g)return a-g}function q(a,c){b&&(g=c,b.timing.transitionStart=a,b.transition.type="view-transition",b.transition.subType="ajax-transition",b.transition.launchType="normal",ue_mbl.cnt=h)}var c=e.ue||{},g=e.ue_t0,b;if(a.P&&a.P.when&&a.P.register)return a.P.when("CSMPlugin").execute(function(a){a.buildAMZNPerformance&&a.buildAMZNPerformance({successCallback:l,
+failCallback:p})}),{cnt:h,ajax:q}},"mobile-timing")(ue_csm,window);
+
+(function(d){d._uess=function(){var a="";screen&&screen.width&&screen.height&&(a+="&sw="+screen.width+"&sh="+screen.height);var b=function(a){var b=document.documentElement["client"+a];return"CSS1Compat"===document.compatMode&&b||document.body["client"+a]||b},c=b("Width"),b=b("Height");c&&b&&(a+="&vw="+c+"&vh="+b);return a}})(ue_csm);
+
+(function(a){var b=document.ue_backdetect;b&&b.ue_back&&a.ue&&(a.ue.bfini=b.ue_back.value);a.uet&&a.uet("be");a.onLdEnd&&(window.addEventListener?window.addEventListener("load",a.onLdEnd,!1):window.attachEvent&&window.attachEvent("onload",a.onLdEnd));a.ueh&&a.ueh(0,window,"load",a.onLd,1);a.ue&&a.ue.tag&&(a.ue_furl&&a.ue_furl.split?(b=a.ue_furl.split("."))&&b[0]&&a.ue.tag(b[0]):a.ue.tag("nofls"))})(ue_csm);
+(function(g,h){function d(a,d){var b={};if(!e||!f)try{var c=h.sessionStorage;c?a&&("undefined"!==typeof d?c.setItem(a,d):b.val=c.getItem(a)):f=1}catch(g){e=1}e&&(b.e=1);return b}var b=g.ue||{},a="",f,e,c,a=d("csmtid");f?a="NA":a.e?a="ET":(a=a.val,a||(a=b.oid||"NI",d("csmtid",a)),c=d(b.oid),c.e||(c.val=c.val||0,d(b.oid,c.val+1)),b.ssw=d);b.tabid=a})(ue_csm,window);
+ue_csm.ue.exec(function(e,f){var a=e.ue||{},b=a._wlo,d;if(a.ssw){d=a.ssw("CSM_previousURL").val;var c=f.location,b=b?b:c&&c.href?c.href.split("#")[0]:void 0;c=(b||"")===a.ssw("CSM_previousURL").val;!c&&b&&a.ssw("CSM_previousURL",b);d=c?"reload":d?"intrapage-transition":"first-view"}else d="unknown";a._nt=d},"NavTypeModule")(ue_csm,window);
+ue_csm.ue.exec(function(c,a){function g(a){a.run(function(e){d.tag("csm-feature-"+a.name+":"+e);d.isl&&c.uex("at")})}if(a.addEventListener)for(var d=c.ue||{},f=[{name:"touch-enabled",run:function(b){var e=function(){a.removeEventListener("touchstart",c,!0);a.removeEventListener("mousemove",d,!0)},c=function(){b("true");e()},d=function(){b("false");e()};a.addEventListener("touchstart",c,!0);a.addEventListener("mousemove",d,!0)}}],b=0;b<f.length;b++)g(f[b])},"csm-features")(ue_csm,window);
+
+
+(function(b,c){var a=c.images;a&&a.length&&b.ue.count("totalImages",a.length)})(ue_csm,document);
+(function(b){function c(){var d=[];a.log&&a.log.isStub&&a.log.replay(function(a){e(d,a)});a.clog&&a.clog.isStub&&a.clog.replay(function(a){e(d,a)});d.length&&(a._flhs+=1,n(d),p(d))}function g(){a.log&&a.log.isStub&&(a.onflush&&a.onflush.replay&&a.onflush.replay(function(a){a[0]()}),a.onunload&&a.onunload.replay&&a.onunload.replay(function(a){a[0]()}),c())}function e(d,b){var c=b[1],f=b[0],e={};a._lpn[c]=(a._lpn[c]||0)+1;e[c]=f;d.push(e)}function n(b){q&&(a._lpn.csm=(a._lpn.csm||0)+1,b.push({csm:{k:"chk",
+f:a._flhs,l:a._lpn,s:"inln"}}))}function p(a){if(h)a=k(a),b.navigator.sendBeacon(l,a);else{a=k(a);var c=new b[f];c.open("POST",l,!0);c.setRequestHeader&&c.setRequestHeader("Content-type","text/plain");c.send(a)}}function k(a){return JSON.stringify({rid:b.ue_id,sid:b.ue_sid,mid:b.ue_mid,mkt:b.ue_mkt,sn:b.ue_sn,reqs:a})}var f="XMLHttpRequest",q=1===b.ue_ddq,a=b.ue,r=b[f]&&"withCredentials"in new b[f],h=b.navigator&&b.navigator.sendBeacon,l="//"+b.ue_furl+"/1/batch/1/OE/",m=b.ue_fci_ft||5E3;a&&(r||h)&&
+(a._flhs=a._flhs||0,a._lpn=a._lpn||{},a.attach&&(a.attach("beforeunload",g),a.attach("pagehide",g)),m&&b.setTimeout(c,m),a._ffci=c)})(window);
+
+
+ue_csm.ue._rtn = 1;
+(function(e,f){function h(a){a=a.split("?")[0]||a;a=a.replace("http://","").replace("https://","").replace("resource://","").replace("res://","").replace("undefined://","").replace("chrome://","").replace(/\*/g,"").replace(/!/g,"").replace(/~/g,"");var b=a.split("/");a=a.substr(a.lastIndexOf("/")+1);b.splice(-1);b=b.map(function(a){c[a]||(c[a]=(k++).toString(36));return c[a]});b.push(a);return b.join("!")}function l(){return f.getEntriesByType("resource").filter(function(a){return d._rre(a)<d._ld}).sort(function(a,
+b){return a.responseEnd-b.responseEnd}).splice(0,m).map(function(a){var b=[],c;for(c in a)g[c]&&a[c]&&b.push(g[c]+Math.max(a[c]|0,-1).toString(36));b.push("i"+a.initiatorType);(1==d._rtn&&d._afjs>n||2==d._rtn)&&b.push("n"+h(a.name));return b.join("_")}).join("*")}function p(){var a="pm",b;for(b in c)c.hasOwnProperty(b)&&(a+="*"+c[b]+"_"+b);return a}function q(){d.log({k:"rtiming",value:l()+"~"+p()},"csm")}if(f&&f.getEntriesByType&&Array.prototype.map&&Array.prototype.filter&&e.ue&&e.ue.log){var g=
+{connectStart:"c",connectEnd:"C",domainLookupStart:"d",domainLookupEnd:"D",duration:"z",encodedBodySize:"e",decodedBodySize:"E",fetchStart:"f",redirectStart:"r",redirectEnd:"R",requestStart:"q",responseStart:"s",responseEnd:"S",startTime:"a",transferSize:"t"},d=e.ue,c={},k=1,n=20,m=200;d&&d._rre&&(d._art=function(){d._ld&&window.setTimeout(q,0)})}})(ue_csm||{},window.performance);
+
+
+(function(c,d){var b=c.ue,a=d.navigator;b&&b.tag&&a&&(a=a.connection||a.mozConnection||a.webkitConnection)&&a.type&&b.tag("netInfo:"+a.type)})(ue_csm,window);
+
+
+(function(c,d){function h(a,b){for(var c=[],d=0;d<a.length;d++){var e=a[d],f=b.encode(e);if(e[k]){var g=b.metaSep,e=e[k],l=b.metaPairSep,h=[],m=void 0;for(m in e)e.hasOwnProperty(m)&&h.push(m+"="+e[m]);e=h.join(l);f+=g+e}c.push(f)}return c.join(b.resourceSep)}function s(a){var b=a[k]=a[k]||{};b[t]||(b[t]=c.ue_mid);b[u]||(b[u]=c.ue_sid);b[f]||(b[f]=c.ue_id);b.csm=1;a="//"+c.ue_furl+"/1/"+a[v]+"/1/OP/"+a[w]+"/"+a[x]+"/"+h([a],y);if(n)try{n.call(d[p],a)}catch(g){c.ue.sbf=1,(new Image).src=a}else(new Image).src=
+a}function q(){g&&g.isStub&&g.replay(function(a,b,c){a=a[0];b=a[k]=a[k]||{};b[f]=b[f]||c;s(a)});l.impression=s;g=null}if(!(1<c.ueinit)){var k="metadata",x="impressionType",v="foresterChannel",w="programGroup",t="marketplaceId",u="session",f="requestId",p="navigator",l=c.ue||{},n=d[p]&&d[p].sendBeacon,r=function(a,b,c,d){return{encode:d,resourceSep:a,metaSep:b,metaPairSep:c}},y=r("","?","&",function(a){return h(a.impressionData,z)}),z=r("/",":",",",function(a){return a.featureName+":"+h(a.resources,
+A)}),A=r(",","@","|",function(a){return a.id}),g=l.impression;n?q():(l.attach("load",q),l.attach("beforeunload",q));try{d.P&&d.P.register&&d.P.register("impression-client",function(){})}catch(B){c.ueLogError(B,{logLevel:"WARN"})}}})(ue_csm,window);
+
+
+
+
+
+
+
+
+var ue_adb = 4;
+var ue_adb_rtla = 1;
+ue_csm.ue.exec(function(w,a){function q(){if(d&&f){var a;a:{try{a=d.getItem(g);break a}catch(c){}a=void 0}if(a)return b=a,!0}return!1}function r(){b=h;k();if(f)try{d.setItem(g,b)}catch(a){}}function s(){b=1===a.ue_adb_chk?l:h;k();if(f)try{d.setItem(g,b)}catch(c){}}function m(){a.ue_adb_rtla&&c&&0<c.ec&&!1===n&&(c.elh=null,ueLogError({m:"Hit Info",fromOnError:1},{logLevel:"INFO",adb:b}),n=!0)}function k(){e.tag(b);e.isl&&a.uex&&uex("at",b);p&&p.updateCsmHit("adb",b);c&&0<c.ec?m():a.ue_adb_rtla&&c&&
+(c.elh=m)}function t(){return b}if(a.ue_adb){var e=a.ue,h="adblk_yes",l="adblk_no",b="adblk_unk",d;a:{try{d=a.localStorage;break a}catch(x){}d=void 0}var g="csm:adb",c=a.ue_err,p=e.cookie,f=void 0!==a.localStorage,u=0.98<Math.random(),n=!1,v=q();u||!v?e.uels("https://m.media-amazon.com/images/G/01/csm/showads.v2.js",{onerror:r,onload:s}):k();a.ue_isAdb=t;a.ue_isAdb.unk="adblk_unk";a.ue_isAdb.no=l;a.ue_isAdb.yes=h}},"adb")(document,window);
+
+
+
+
+
+ue_csm.ue_wdg_imp = 0;
+
+
+ue_csm.ue_unrt = 750;
+(function(d,c,t){function p(a){try{if(a.id)return"//*[@id='"+a.id+"']";var d,c=1,g;for(g=a.previousSibling;g;g=g.previousSibling)g.nodeName===a.nodeName&&(c+=1);d=c;var b=a.nodeName;1!==d&&(b+="["+d+"]");a.parentNode&&(b=p(a.parentNode)+"/"+b);return b}catch(e){return"DETACHED"}}function u(a){l=!0;var f=h=d.ue.d(),k;d.ue_cdt&&m&&"function"===typeof m.now&&a.timeStamp&&(k=m.now()-a.timeStamp,k=parseFloat(k.toFixed(2)));q=c.setTimeout(function(){var c=k,b=a.srcElement||a.target||{},e={k:v,t:f,x:a.pageX,
+y:a.pageY,p:p(b),n:b.nodeName};d.ue_cdt&&c&&(e.dt=c);a.button&&(e.b=a.button);b.type&&(e.ty=b.type);b.href&&(e.r=b.href);b.id&&(e.i=b.id);b.className&&b.className.split&&(e.c=b.className.split(/\s+/));d.ue.log(e,r)},w)}function x(a){n=!0;f=d.ue.d();l&&n&&(d.ue_cmr&&f&&h&&d.ue.log({k:y,t:h,m:Math.abs(f-h)},r),s(),n=!1,f=0)}function s(){l=!1;h=0;c.clearTimeout(q)}if(c.MutationObserver&&c.addEventListener&&d&&d.ue_unrt){var w=d.ue_unrt,r="cel",v="unr_mcm",y="res_mcm",m=c.performance,l=!1,h=0,q=0,n=!1,
+f=0;c.addEventListener&&(c.addEventListener("mousedown",u,!0),c.addEventListener("beforeunload",s,!0));(new MutationObserver(x)).observe(t,{childList:!0,attributes:!0,characterData:!0,subtree:!0})}})(ue_csm,window,document);
+
+
+ue_csm.ue.exec(function(g,f){f.ue_err=f.ue_err||{};var e="";f.ue_err.addContextInfo=function(a){if(!a.logLevel||"FATAL"===a.logLevel)if(e=g.getElementsByTagName("html")[0].innerHTML){var b=e.indexOf("var ue_t0=ue_t0||+new Date();");if(-1!=b){var b=e.substr(0,b).split("\n"),d=Math.max(b.length-5-1,0),b=b.slice(d,b.length-1);a.fcsmln=b.length+1;a.cinfo=a.cinfo||{};for(var c=0;c<b.length;c++)a.cinfo[d+c+1+""]=b[c]}b=e.split("\n");a.cinfo=a.cinfo||{};if(!(a.f||void 0===a.l||a.l in a.cinfo))for(c=+a.l-
+1,d=Math.max(c-2,0),c=Math.min(c+2,b.length-1);d<=c;d++)a.cinfo[d+1+""]=b[d]}}},"fatals-context")(document,window);
+
+
+
+
+
+/* ◬ */
+</script>
+
+</div>
+
+<noscript>
+    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-na.amazon.com/1/batch/1/OP/A1EVAM02EL8SFB:141-2764260-6912733:CPT6D7TDQK97JBTMH3AJ$uedata=s:%2Fuedata%3Fnoscript%26id%3DCPT6D7TDQK97JBTMH3AJ:0' alt=""/>
+</noscript>
+
+    </body>
+</html>

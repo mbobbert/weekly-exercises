@@ -1,0 +1,23 @@
+.counter {
+	margin-bottom: 1.5rem;
+}
+
+.counter-button {
+	color: white;
+	background-color: peru;
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.counter-text {
+	padding: 0.5rem;
+}
+
+.counters-box {
+	border: 1px solid lightgrey;
+	padding: 1rem;
+	background-color: white;
+}
+

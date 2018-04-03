@@ -1,0 +1,47 @@
+.date{
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: solid 18px rgb(182, 182, 182);
+    width: 50px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    margin-bottom: 2em;
+
+
+}
+
+.date-letters{
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    padding: 0%;
+}
+
+.title {
+    font-weight: bold;
+    color: black;
+}
+
+.text{
+    color: black;
+}
+
+.description {
+    background-color: lightgray;
+}
+.box {
+    display: flex;
+    background-color: silver;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-box{
+    border: 1px solid black;
+}

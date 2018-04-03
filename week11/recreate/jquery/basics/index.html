@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            TOP
+        </div>
+        <div class="main-box">
+            <div class="left-menu">
+                Left Menu
+            </div>
+            <div class="main">
+                <h1>Main</h1>
+                <div class="text">
+                    Lorum ipsum dolor sit amet, no eos atqui debet, mei in quot disputationi. Ei eam unique consetutr.
+                </div>
+            </div>
+            <div class="right-menu">
+                Right column
+            </div>
+        </div>
+    </div>
+    <div class="circle" id="circle">
+    </div>
+    <div class="salary">
+        <p>How many hours per day do you work?</p>
+            <input type="number" id="hours">
+        <p>How much do you get paid per hour?</p>
+            <input type="number" id="wage">
+        <button id="btn" type="submit">Check your daily salary</button>
+        <p id="give_output"></p>
+    </div>
+
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script>
+        console.log('hello');
+        $(document).ready(function() {
+            console.log('read');
+        })
+
+        $('#circle').click(function() {
+           $(this).addClass('exit');
+        });
+
+
+
+        $('#btn').click(function() {
+            $('#give_output').html("you earn " + calc_salary);
+        })
+
+        function calc_salary() {
+            var hours = $('#hours');
+                var hours_number = parseInt(hours.val());
+            var wage = $('#wage');
+                var wage_number = parseInt(wage.val());
+            var wage_per_day = hours_number * wage_number;
+                return wage_per_day ;
+        }
+    </script>
+</body>
+</html>

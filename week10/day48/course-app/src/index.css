@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: grey;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+header, footer {
+	color: white;
+	height: 3rem;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: darkblue;
+	font-weight: bold;
+}
+
+main {
+	background-color: white;
+	padding-bottom: 3rem;
+}
+
+footer {
+	background-color: grey;
+}

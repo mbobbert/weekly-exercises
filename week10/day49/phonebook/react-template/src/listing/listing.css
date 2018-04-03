@@ -1,0 +1,7 @@
+.listing {
+    width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    text-align: center;
+    margin-top: 50px;
+}

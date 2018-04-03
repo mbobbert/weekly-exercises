@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: lightgrey;
+}
+
+.container {
+	max-width: 20rem;
+	margin: 1rem auto;
+}

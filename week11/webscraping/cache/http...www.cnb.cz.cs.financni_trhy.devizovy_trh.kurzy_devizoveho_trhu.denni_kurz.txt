@@ -1,0 +1,35 @@
+19.03.2018 #55
+země|měna|množství|kód|kurz
+Austrálie|dolar|1|AUD|15,902
+Brazílie|real|1|BRL|6,276
+Bulharsko|lev|1|BGN|13,002
+Čína|renminbi|1|CNY|3,264
+Dánsko|koruna|1|DKK|3,414
+EMU|euro|1|EUR|25,430
+Filipíny|peso|100|PHP|39,632
+Hongkong|dolar|1|HKD|2,634
+Chorvatsko|kuna|1|HRK|3,422
+Indie|rupie|100|INR|31,693
+Indonesie|rupie|1000|IDR|1,501
+Island|koruna|100|ISK|20,759
+Izrael|šekel|1|ILS|5,959
+Japonsko|jen|100|JPY|19,453
+Jihoafrická rep.|rand|1|ZAR|1,709
+Jižní Korea|won|100|KRW|1,925
+Kanada|dolar|1|CAD|15,794
+Maďarsko|forint|100|HUF|8,177
+Malajsie|ringgit|1|MYR|5,274
+Mexiko|peso|1|MXN|1,097
+MMF|SDR|1|XDR|29,993
+Norsko|koruna|1|NOK|2,671
+Nový Zéland|dolar|1|NZD|14,912
+Polsko|zlotý|1|PLN|6,026
+Rumunsko|nové leu|1|RON|5,448
+Rusko|rubl|100|RUB|35,664
+Singapur|dolar|1|SGD|15,675
+Švédsko|koruna|1|SEK|2,522
+Švýcarsko|frank|1|CHF|21,700
+Thajsko|baht|100|THB|66,216
+Turecko|lira|1|TRY|5,237
+USA|dolar|1|USD|20,661
+Velká Británie|libra|1|GBP|29,052

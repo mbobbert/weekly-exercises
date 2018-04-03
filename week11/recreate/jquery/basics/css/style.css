@@ -1,0 +1,51 @@
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+.main-box{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.left-menu{
+    flex-basis: 20%;
+    margin: 10px;
+    padding: 10px;
+    order: 3
+}
+
+.main{
+    flex-basis: 60%;
+    margin: 10px;
+    padding: 10px;
+    order: 2;
+}
+
+.right-menu{
+    flex-basis: 20%;
+    margin: 10px;
+    padding: 10px;
+    order: 1;
+}
+
+.top,
+.main-box,
+.left-menu,
+.main,
+.right-menu {
+    border: 1px solid black;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+
+    background-color: violet;
+}
+
+.exit {
+    border:1px solid red;
+}
